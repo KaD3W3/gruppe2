@@ -35,6 +35,7 @@ seine Supportanfragen in ein IT-System (z. B. Chatbot) einzugeben, um an die rel
 Eine Auswahl der relevanten Supportanfragen wurde dabei von der Mitarbeiterin des Cornelsen
 Verlages im Kick-Off-Gespräch, wie die Software und das Handbuch selbst, kurz vorgestellt und im
 Anschluss das Handbuch, den Studierenden zur Verfügung gestellt.
+
 ## 2) Vorgehen während der Modellierung
 Zu Beginn des Studienmoduls wurden alle Teilnehmer in zwei Arbeitsgruppen mit jeweils vier bis
 fünf Mitgliedern aufgeteilt.
@@ -43,7 +44,6 @@ zwei Teile aufgeteilt, so dass es pro Person jeweils ca. 20 Seiten zu untersuche
 Vorab wurde von jedem Studierenden das gesamte Handbuch überflogen und dann der jeweils
 eigene Teil des Handbuches intensiv durchgelesen und relevante Begriffe markiert.
 ######
-
 Die markierten Begriffe wurden anschließend in eine dafür vorgesehene Excel-Tabelle je
 Gruppenmitglied eingetragen.
 Als Grundlage diente den einzelnen Studierenden dabei eine zuvor selbst erstellte, einheitliche
@@ -54,7 +54,6 @@ Diskussionsgrundlage zur Abstimmung innerhalb der Gruppe zu erhalten.
 Nach zahlreichen Online-Treffen zur Konsolidierung der Gruppentabelle, was viel Zeit für
 Diskussionen erfordert hatte, war der erste Entwurf der Gruppe fertig.
 ######
-
 Auf Basis des ersten Taxonomie-Entwurfs folgte in einem Online-Meeting mit zwei Vertreterinnen
 des Auftraggebers ein Feedback-Gespräch, zu den bisherigen Ergebnissen der eigenen Gruppe, als
 auch zu den Ergebnissen der zweiten Projektgruppe.
@@ -82,6 +81,8 @@ Bevor abschließend die Nummerierung der gesamten Tabelle implementiert und die 
 Einholung von erneutem Feedback an die Mitarbeiterinnen vom Cornelsen Verlag geschickt wurde.
 Die untenstehende Darstellung gibt eine Zusammenfassung der oben beschriebenen
 Vorgehensweise wieder.
+![Vorgehensweise](https://user-images.githubusercontent.com/50373209/81845684-35757080-9551-11ea-8d42-feeeba81f15c.png)
+
 ## 3) Schwierigkeiten
 #### a) Modellierungsoptionen
 Da die Studierenden von Anfang an keinen Zugriff auf das System hatten, konnte die Wichtigkeit der
