@@ -81,7 +81,7 @@ Bevor abschließend die Nummerierung der gesamten Tabelle implementiert und die 
 Einholung von erneutem Feedback an die Mitarbeiterinnen vom Cornelsen Verlag geschickt wurde.
 Die untenstehende Darstellung gibt eine Zusammenfassung der oben beschriebenen
 Vorgehensweise wieder.
-![Vorgehensweise](https://user-images.githubusercontent.com/50373209/81845684-35757080-9551-11ea-8d42-feeeba81f15c.png)
+
 
 ## 3) Schwierigkeiten
 #### a) Modellierungsoptionen
