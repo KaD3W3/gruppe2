@@ -6,7 +6,6 @@ Der fachliche Hintergrund in Bezug auf die Software Elvis wurde dabei von einer 
 Cornelsen Verlags GmbH, im weiteren Sinne dem Auftraggeber dieses Projektes, an die
 Studierenden vermittelt.
 ######
-
 Was aber ist eigentlich dieses Elvis? Elvis (siehe http://www.elvisdam-plus.de/) ist eine Software zur
 Verwaltung und Weiterverarbeitung von digitalen Assets und wird vom Cornelsen Verlag als
 zentrales Digital Asset Management-System (DAM-System) für interne und externe MitarbeiterInnen
@@ -16,11 +15,9 @@ relevanten Dateien, wie z. B. Bild-, Audio-, Video-Dateien bis hin zu Manuskript
 Im Elvis-System sind damit ein Großteil der zentralen Unternehmenswerte des Cornelsen Verlages
 enthalten.
 ######
-
 Übergeordnetes Ziel des Projektes war es, ein Wissensmodell (Enterprise Knowledge Modell) zu
 entwerfen, welches im Anschluss ggf. zur automatischen Weiterverarbeitung mittels eines ITSystems (z. B. Webseiten-Navigation, Suchmaske, Chatbot) genutzt werden kann.
 ######
-
 In Use Case 1 sollte daher von den Studierenden eine Taxonomie, als Wissensbasis mit den
 wichtigsten Begriffen, Begriffs-Varianten (als Synonym) sowie Ober- und Unterbegriffen zum ElvisSystem auf der Grundlage des Handbuches entwickelt werden.
 Diese Taxonomie sollte dann ins RDF-Format (Resource Description Framework) überführt und
