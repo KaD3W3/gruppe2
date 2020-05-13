@@ -1,3 +1,5 @@
+#jghdughdug
+######
 # Teil 1: Beschreibung der Use-Case Domäne,informelle Domänenmodellierung
 ## 1) Zielstellung und Beschreibung der modellierten Domäne
 Ausgangspunkt des studentischen Projektes im Rahmen des Moduls “Enterprise Knowledge
