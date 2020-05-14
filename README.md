@@ -235,4 +235,4 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 ## Anhang
 ##### 1) [Grafik erstes Modell](https://github.com/KaD3W3/gruppe2/blob/master/Anhang_1_Grafik%20erstes%20Modell.pdf)
 ##### 2) [Tabelle vor Qualitätsüberprüfung](https://github.com/KaD3W3/gruppe2/blob/master/Anhang_2_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx)
-##### 3) [Zusammengeführte Tabelle](https://docs.google.com/spreadsheets/d/1POyNr0kZ6jmIQlNlRZe6p2msfRYsHwgX/edit#gid=654629494)
+##### 3) [Zusammengeführte Tabelle](https://github.com/KaD3W3/gruppe2/blob/master/Anhang_3_Zusammengef%C3%BChrte%20Tabelle.xlsx)
