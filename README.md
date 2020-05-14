@@ -237,6 +237,6 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 ##### 2) [Tabelle vor Qualitätsüberprüfung]
 ##### 3) [Zusammengeführte Tabelle]
 
-[Grafik erstes Modell]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_1_Grafik%20erstes%20Modell.pdf
-[Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_2_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
-[Zusammengeführte Tabelle]: https://www.???ist_noch_zu_ergänzen????.de
+[Grafik erstes Modell] (https://github.com/KaD3W3/gruppe2/blob/master/Anhang_1_Grafik%20erstes%20Modell.pdf)
+[Tabelle vor Qualitätsüberprüfung] (https://github.com/KaD3W3/gruppe2/blob/master/Anhang_2_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx)
+[Zusammengeführte Tabelle] (https://docs.google.com/spreadsheets/d/1POyNr0kZ6jmIQlNlRZe6p2msfRYsHwgX/edit#gid=654629494)
