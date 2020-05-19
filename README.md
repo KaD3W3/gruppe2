@@ -244,8 +244,8 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 ## Anhang
 ##### 1) [Grafik erstes Modell - als Bild]
 ##### 2) [Grafik erstes Modell - als Markdown-Datei]
-##### 2) [Tabelle vor Qualitätsüberprüfung]
-##### 3) [Zusammengeführte Tabelle]
+##### 3) [Tabelle vor Qualitätsüberprüfung]
+##### 4) [Zusammengeführte Tabelle]
 
 [Grafik erstes Modell - als Bild]: https://raw.githubusercontent.com/KaD3W3/gruppe2/JKbrb-patch-1/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png
 [Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Anhang_2_Markdown_Elvis_Digital-Asset-Management.md
