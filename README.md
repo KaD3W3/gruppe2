@@ -1,4 +1,4 @@
-# Teil 1: Beschreibung der Use-Case Domäne,informelle Domänenmodellierung
+# Teil 1: Beschreibung der Use-Case Domäne, informelle Domänenmodellierung
 ## 1) Zielstellung und Beschreibung der modellierten Domäne
 Ausgangspunkt des studentischen Projektes im Rahmen des Moduls “Enterprise Knowledge
 Engineering” war das Handbuch zur Elvis-Software sowie zwei zu bearbeitende Use Cases.
@@ -16,10 +16,10 @@ Im Elvis-System sind damit ein Großteil der zentralen Unternehmenswerte des Cor
 enthalten.
 ######
 Übergeordnetes Ziel des Projektes war es, ein Wissensmodell (Enterprise Knowledge Modell) zu
-entwerfen, welches im Anschluss ggf. zur automatischen Weiterverarbeitung mittels eines ITSystems (z. B. Webseiten-Navigation, Suchmaske, Chatbot) genutzt werden kann.
+entwerfen, welches im Anschluss ggf. zur automatischen Weiterverarbeitung mittels eines IT-Systems (z. B. Webseiten-Navigation, Suchmaske, Chatbot) genutzt werden kann.
 ######
 In Use Case 1 sollte daher von den Studierenden eine Taxonomie, als Wissensbasis mit den
-wichtigsten Begriffen, Begriffs-Varianten (als Synonym) sowie Ober- und Unterbegriffen zum ElvisSystem auf der Grundlage des Handbuches entwickelt werden.
+wichtigsten Begriffen, Begriffs-Varianten (als Synonym) sowie Ober- und Unterbegriffen zum Elvis-System auf der Grundlage des Handbuches entwickelt werden.
 Diese Taxonomie sollte dann ins RDF-Format (Resource Description Framework) überführt und
 mittels des SKOS-Modells formalisiert werden. Letztlich sollte dadurch erreicht werden, dass es
 mittels einer IT-Anwendung möglich ist, in der Begriffshierarchie über die Ober- und Unterbegriffe
@@ -27,7 +27,7 @@ zu navigieren sowie über eine Suchmasken-Anwendung über die verschiedenen Syno
 zentralen, relevanten Fundstellen zum gesuchten Thema bzw. Problem im Elvis-Handbuch zu finden.
 ######
 
-In Use Case 2 sollte dann auf Basis häufig auftretender Supportanfragen durch die Nutzer der ElvisSoftware, die Taxonomie aus Use Case 1 überprüft und sofern erforderlich, das Wissensmodell um
+In Use Case 2 sollte dann auf Basis häufig auftretender Supportanfragen durch die Nutzer der Elvis-Software, die Taxonomie aus Use Case 1 überprüft und sofern erforderlich, das Wissensmodell um
 weitere Beziehungen erweitert werden.
 Letztlich sollte dadurch ein Ontologie-Modell entworfen werden, welches es dem Nutzer ermöglicht,
 seine Supportanfragen in ein IT-System (z. B. Chatbot) einzugeben, um an die relevante Stelle des
@@ -56,7 +56,8 @@ Diskussionen erfordert hatte, war der erste Entwurf der Gruppe fertig.
 ######
 
 Die folgende Grafik zeigt den mittels eines Mindmaps ersten Entwurf der Gruppe 2.
-![Erster Entwurf der Taxonomie Gruppe 2](https://raw.githubusercontent.com/KaD3W3/gruppe2/JKbrb-patch-1/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png)
+![Erster Entwurf der Taxonomie Gruppe 2](https://github.com/KaD3W3/gruppe2/blob/master/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png)
+###### Abbildung 1: Erster Taxonomie-Entwurf als Mindmap (Gruppe 2)
 
 ######
 Auf Basis des ersten Taxonomie-Entwurfs folgte in einem Online-Meeting mit zwei Vertreterinnen
@@ -70,7 +71,7 @@ Dies hat dazu geführt, dass die Taxonomie mit weniger Synonymen insgesamt „br
 ist, da nicht so viele alternative Bezeichnungen vorhanden waren.
 ######
 Im Anschluss wurden die Tabellen der beiden Projektgruppen zu einer “großen” Tabelle mit allen
-bisher modellierten Konzepten der beiden Gruppen zusammengeführt.
+bisher modellierten Konzepten zusammengeführt.
 Diese gesamtheitliche Tabelle wurde dann schrittweise manuell nochmals überarbeitet, wodurch
 die Anzahl der Konzepte reduziert werden konnte.
 Positiv dabei hervorzuheben ist, dass die erste Gruppe sich bereit erklärte, viele eigene Konzepte zu
@@ -87,6 +88,9 @@ Einholung von erneutem Feedback an die Mitarbeiterinnen vom Cornelsen Verlag ges
 Die untenstehende Darstellung gibt eine Zusammenfassung der oben beschriebenen
 Vorgehensweise wieder.
 ![Vorgehensweise](https://user-images.githubusercontent.com/50373209/81853487-c43bba80-955c-11ea-88db-d73b7f477e3a.png)
+###### Abbildung 2: Zusammenfassung der Vorgehensweise
+
+Auf Basis eines Impulsvortrages durch einen Terminologie-Experten, wurde die zusammengeführte Taxonomie-Tabelle im Anschluss eine weiteres Mal überarbeitet und für alle Konzepte (bis zu Ebene 3) versucht eine Definition zu implementieren. 
 
 ## 3) Schwierigkeiten
 #### a) Modellierungsoptionen
@@ -107,7 +111,7 @@ Strukturierung der Taxonomie zu identifizieren und zu klassifizieren.
 Im Rahmen des Feedback-Meetings wurden dann die Anforderungen bzw. das Ziel in Bezug auf den
 Umgang mit Synonymen deutlicher, so dass dies sehr hilfreich für das Verständnis und die weitere
 Modellierung war.
-#### b) organisatorische Herausforderungen
+#### b) Organisatorische Herausforderungen
 Da Gruppenarbeit ein ständiges Auf und Ab ist, stießen die Studierenden der Gruppe 2 sowohl bei
 der Kommunikation als auch bei der Bearbeitung des Projekts selbst auf einige Herausforderungen,
 die es zu bewältigen galt.
@@ -132,7 +136,7 @@ Anforderungen im Hinblick auf die Wissensmodellierung seitens des Cornelsen Verl
 Zwar war den Studierenden der grobe Rahmen des Projektes bewusst, jedoch hatten die einzelnen
 Teilnehmer zu Beginn des Projektes unterschiedliche Sichtweisen auf das Modellierungsvorhaben.
 Diese Anforderungen wurden dann mit der Vorstellung und Einführung der Cornelsen-Expertin in
-das Elvis-System weiter geschärft, jedoch wie sich im Rahmen des Feedback-Meetings zeigte, ist eine
+das Elvis-System weiter geschärft, jedoch wie sich im Rahmen des Feedback-Meetings zeigte, war eine
 regelmäßige Iteration bzw. Rückkopplung mit dem Auftraggeber unerlässlich und sehr wichtig für
 den Projektfortschritt.
 Wie in jedem anderen interdisziplinären Projekt, führte dies teilweise zu einem erhöhten
@@ -155,16 +159,17 @@ Gruppentabellen.
 Dadurch funktionierte eine einfache Integration der beiden Gruppentabellen ineinander nur
 teilweise, so dass die Gesamttabelle ebenfalls durch viele Online-Abstimmungen, bis hin zum
 aktuellen Stand, bereinigt werden musste.
+
 ## 4) Die (iterativ erstellten) Versionen des Modells
 Durch den iterativ gestalteten Prozess gelang es den Studierenden aus beiden Gruppen das jetzige
-Taxonomie-Modell (siehe Anhang 3) vorzulegen.
+Taxonomie-Modell (siehe Anhang 4) vorzulegen.
 Zu Anfang sah das Modell noch ganz anders aus und hatte noch keinen Input von der anderen
 Gruppe oder von den Cornelsen-Expertinnen.
 ######
 
 Um sich in die Systemstrukturen von Elvis einzuarbeiten, wurde auf Basis der ersten Gruppenversion
 eine Grafik (Mindmap) erstellt mit den Vermutungen und Vorstellungen zur Hierarchie.
-In dieser ersten Version (siehe Anhang 1) hatte die Gruppe 2 sieben Oberbegriffe, mit diversen
+In dieser ersten Version (siehe Abbildung 1 bzw. Anhang 1 und Anhang 2) hatte die Gruppe 2 sieben Oberbegriffe, mit diversen
 Unterbegriffen und Gruppierungen, modelliert.
 ######
 
@@ -172,16 +177,16 @@ Nach dem Feedback vom Cornelsen Verlag wurde versucht, das Problem der Synonyme 
 (siehe Kapitel 3) und dadurch wurde die zweite Gruppenversion insgesamt breiter, da nur echte
 Synonyme verwendet werden sollten.
 Zuvor gelöschte Konzepte oder als Synonym eingesetzte Konzepte wurden wieder eingesetzt (siehe
-Anhang 2).
-![Anhang_2](https://user-images.githubusercontent.com/50373209/82310892-41d05200-99c5-11ea-9ef9-bb26658dd13e.PNG)
+Anhang 3).
+![Anhang_3](https://user-images.githubusercontent.com/50373209/82310892-41d05200-99c5-11ea-9ef9-bb26658dd13e.PNG)
+###### Abbildung 3: Auszug Taxonomie-Entwurf als Excel-Tabelle
+
+Im letzten Schritt wurde versucht, die Strukturen der beiden Gruppen zu einer verschmelzen zu
+lassen. Was, wie schon erwähnt, nicht einfach war. 
+Im aktuellen Modell sind 315 einzelne Konzepte und 12 Oberbegriffe enthalten.
+Das Ganze wird unter dem Elvis-Thesaurus geführt (siehe Anhang 4).
 ######
 
-Im letzten Schritt wurde versucht die Strukturen der beiden Gruppen zu einer verschmelzen zu
-lassen.
-Was, wie schon erwähnt, nicht einfach war. In dem jetzigen Modell sind 320 einzelne Konzepte und
-12 Oberbegriffe enthalten.
-Das Ganze wird unter dem Elvis-Thesaurus geführt (siehe Anhang 3)
-######
 ## 5) Maßnahmen zur Qualitätssicherung
 Um die Qualität des Projektes bzw. der Taxonomie zu sichern, wurden in einem ersten Schritt die
 Tabellen zwischen den Gruppen ausgetauscht und die Modelle der jeweils anderen Gruppe gesichtet
@@ -189,12 +194,12 @@ und kommentiert.
 Im Anschluss wurden dann die Tabellen von den Gruppen nochmals überarbeitet und schließlich zu
 einer Gesamttabelle zusammengeführt.
 Im nächsten Schritt des Qualitätssicherungsprozesses wurde jede einzelne Zeile (anfangs über 400
-Zeilen) der zusammengeführten Excel-Tabelle mit der Logik der Elvis-Struktur geprüft und von den
-beiden Projektgruppen abgestimmt.
-Durch die Verwendung der “...ist ein...”-Logik konnten fälschlicherweise angenommene Beziehungen
+Zeilen) der zusammengeführten Excel-Tabelle mit der Logik der Elvis-Struktur geprüft und 
+die Konzepte durch beide Projektgruppen abgestimmt.
+Unter der Verwendung der “...ist ein...”-Logik konnten fälschlicherweise angenommene Beziehungen
 erkannt und verbessert werden.
 Durch die Anmerkung der jeweiligen Studierendengruppe konnten zudem Redundanzen minimiert
-werden und Synonyme wurden an deren richtige Stelle platziert.
+und Synonyme an deren richtige Stelle platziert werden.
 Alle Konzepte, die nicht mit dem aktuellen Release von Elvis möglich waren, wurden nach dem
 Feedback von den Cornelsen-Expertinnen, ebenfalls gelöscht.
 ######
@@ -202,6 +207,7 @@ Feedback von den Cornelsen-Expertinnen, ebenfalls gelöscht.
 Zudem wurde ein Großteil der Qualitätssicherung durch das wiederholte, iterative Diskutieren und
 Besprechen der einzelnen Konzepte, sowohl während der Arbeit an der gruppeneigenen Tabelle als
 auch nach der Zusammenführung der beiden Gruppentabellen, erreicht.
+
 ## 6) Kritische Würdigung der Ergebnisse
 Zusammenfassend kann festgehalten werden, dass das Projektziel, ein Taxonomie-Modell zu
 entwerfen, welches durch den Auftraggeber für die Automatisierung mittels eines IT-Systems
@@ -216,7 +222,8 @@ alle Beteiligten geleistet.
 
 Andererseits hätte der Verlauf des Projekts verbessert werden können, wenn die Studierenden
 Zugang zum Elvis-System oder zu Videos in Bezug auf die Nutzung gehabt hätten, um sich das
-System bildlich vorzustellen.
+System bildlich vorzustellen. Des Weiteren wäre die Abstimmung mit der anderen Projektgruppe vermutlich einfacher verlaufen, 
+wenn die Definitionen zu den einzelnen Konzepten bereits von Beginn an implementiert worden wären.
 Darüber hinaus bleibt zu vermuten, dass die Kommunikationsherausforderungen einfacher zu lösen
 gewesen wären, wenn das Projekt nicht ausschließlich online durchgeführt worden wäre.
 Alle diese Punkte haben das Projekt insgesamt vielseitiger, aber auch die Abstimmung aufwendiger
@@ -247,9 +254,8 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 ##### 3) [Tabelle vor Qualitätsüberprüfung]
 ##### 4) [Zusammengeführte Tabelle]
 
-[Grafik erstes Modell - als Bild]: https://raw.githubusercontent.com/KaD3W3/gruppe2/JKbrb-patch-1/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png
-[Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Anhang_2_Markdown_Elvis_Digital-Asset-Management.md
-[Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Anhang_3_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
-[Zusammengeführte Tabelle]: https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Anhang_4_Taxonomie_Struktur_zusammengef%C3%BChrte_Tabelle.xlsx
-
+[Grafik erstes Modell - als Bild]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png
+[Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_2_Markdown_Elvis_Digital-Asset-Management.md
+[Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_3_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
+[Zusammengeführte Tabelle]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_4_Taxonomie_Struktur_zusammengef%C3%BChrte_Tabelle.txt
 
