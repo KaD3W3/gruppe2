@@ -86,7 +86,7 @@ Bevor abschließend die Nummerierung der gesamten Tabelle implementiert und die 
 Einholung von erneutem Feedback an die Mitarbeiterinnen vom Cornelsen Verlag geschickt wurde.
 Die untenstehende Darstellung gibt eine Zusammenfassung der oben beschriebenen
 Vorgehensweise wieder.
-![Vorgehensweise](https://user-images.githubusercontent.com/50373209/81845684-35757080-9551-11ea-8d42-feeeba81f15c.png)
+![Vorgehensweise](https://user-images.githubusercontent.com/50373209/81853487-c43bba80-955c-11ea-88db-d73b7f477e3a.png)
 
 ## 3) Schwierigkeiten
 #### a) Modellierungsoptionen
@@ -166,11 +166,14 @@ Um sich in die Systemstrukturen von Elvis einzuarbeiten, wurde auf Basis der ers
 eine Grafik (Mindmap) erstellt mit den Vermutungen und Vorstellungen zur Hierarchie.
 In dieser ersten Version (siehe Anhang 1) hatte die Gruppe 2 sieben Oberbegriffe, mit diversen
 Unterbegriffen und Gruppierungen, modelliert.
+######
+
 Nach dem Feedback vom Cornelsen Verlag wurde versucht, das Problem der Synonyme zu lösen
 (siehe Kapitel 3) und dadurch wurde die zweite Gruppenversion insgesamt breiter, da nur echte
 Synonyme verwendet werden sollten.
 Zuvor gelöschte Konzepte oder als Synonym eingesetzte Konzepte wurden wieder eingesetzt (siehe
 Anhang 2).
+![Anhang_2](https://user-images.githubusercontent.com/50373209/82310892-41d05200-99c5-11ea-9ef9-bb26658dd13e.PNG)
 ######
 
 Im letzten Schritt wurde versucht die Strukturen der beiden Gruppen zu einer verschmelzen zu
@@ -178,6 +181,7 @@ lassen.
 Was, wie schon erwähnt, nicht einfach war. In dem jetzigen Modell sind 320 einzelne Konzepte und
 12 Oberbegriffe enthalten.
 Das Ganze wird unter dem Elvis-Thesaurus geführt (siehe Anhang 3)
+######
 ## 5) Maßnahmen zur Qualitätssicherung
 Um die Qualität des Projektes bzw. der Taxonomie zu sichern, wurden in einem ersten Schritt die
 Tabellen zwischen den Gruppen ausgetauscht und die Modelle der jeweils anderen Gruppe gesichtet
@@ -247,4 +251,5 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 [Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Elvis%20%20Digital-Asset-Management%20(DAM).md
 [Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_2_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
 [Zusammengeführte Tabelle]: https://www.???ist_noch_zu_ergänzen????.de
+
 
