@@ -178,7 +178,7 @@ Nach dem Feedback vom Cornelsen Verlag wurde versucht, das Problem der Synonyme 
 Synonyme verwendet werden sollten.
 Zuvor gelöschte Konzepte oder als Synonym eingesetzte Konzepte wurden wieder eingesetzt (siehe
 Anhang 3).
-![Anhang_3](https://user-images.githubusercontent.com/50373209/82310892-41d05200-99c5-11ea-9ef9-bb26658dd13e.PNG)
+![Anhang_3](https:// Datei gelöscht!!!)
 ###### Abbildung 3: Auszug Taxonomie-Entwurf als Excel-Tabelle
 
 Im letzten Schritt wurde versucht, die Strukturen der beiden Gruppen zu einer verschmelzen zu
