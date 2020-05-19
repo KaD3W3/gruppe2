@@ -161,6 +161,8 @@ Um sich in die Systemstrukturen von Elvis einzuarbeiten, wurde auf Basis der ers
 eine Grafik (Mindmap) erstellt mit den Vermutungen und Vorstellungen zur Hierarchie.
 In dieser ersten Version (siehe Anhang 1) hatte die Gruppe 2 sieben Oberbegriffe, mit diversen
 Unterbegriffen und Gruppierungen, modelliert.
+######
+
 Nach dem Feedback vom Cornelsen Verlag wurde versucht, das Problem der Synonyme zu lösen
 (siehe Kapitel 3) und dadurch wurde die zweite Gruppenversion insgesamt breiter, da nur echte
 Synonyme verwendet werden sollten.
@@ -174,6 +176,7 @@ lassen.
 Was, wie schon erwähnt, nicht einfach war. In dem jetzigen Modell sind 320 einzelne Konzepte und
 12 Oberbegriffe enthalten.
 Das Ganze wird unter dem Elvis-Thesaurus geführt (siehe Anhang 3)
+######
 ## 5) Maßnahmen zur Qualitätssicherung
 Um die Qualität des Projektes bzw. der Taxonomie zu sichern, wurden in einem ersten Schritt die
 Tabellen zwischen den Gruppen ausgetauscht und die Modelle der jeweils anderen Gruppe gesichtet
