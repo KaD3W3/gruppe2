@@ -56,7 +56,7 @@ Diskussionen erfordert hatte, war der erste Entwurf der Gruppe fertig.
 ######
 
 Die folgende Grafik zeigt den mittels eines Mindmaps ersten Entwurf der Gruppe 2.
-![Erster Entwurf der Taxonomie Gruppe 2](https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Elvis%20%20Digital-Asset-Management%20(DAM).png)
+![Erster Entwurf der Taxonomie Gruppe 2](https://raw.githubusercontent.com/KaD3W3/gruppe2/JKbrb-patch-1/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png)
 
 ######
 Auf Basis des ersten Taxonomie-Entwurfs folgte in einem Online-Meeting mit zwei Vertreterinnen
@@ -247,9 +247,9 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 ##### 2) [Tabelle vor Qualitätsüberprüfung]
 ##### 3) [Zusammengeführte Tabelle]
 
-[Grafik erstes Modell - als Bild]: https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Elvis%20%20Digital-Asset-Management%20(DAM).png
-[Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Elvis%20%20Digital-Asset-Management%20(DAM).md
-[Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_2_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
-[Zusammengeführte Tabelle]: https://www.???ist_noch_zu_ergänzen????.de
+[Grafik erstes Modell - als Bild]: https://raw.githubusercontent.com/KaD3W3/gruppe2/JKbrb-patch-1/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png
+[Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Anhang_2_Markdown_Elvis_Digital-Asset-Management.md
+[Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Anhang_3_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
+[Zusammengeführte Tabelle]: https://github.com/KaD3W3/gruppe2/blob/JKbrb-patch-1/Anhang_4_Taxonomie_Struktur_zusammengef%C3%BChrte_Tabelle.xlsx
 
 
