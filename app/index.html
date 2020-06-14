@@ -182,7 +182,7 @@
                             </thead>
                             <tbody>
                                 <tr v-for="(binding, bindingIndex) in this.querybindings">
-                                    <td v-for="(entry,entryIndex) in binding" data-label="" >
+                                    <td v-for="(entry,entryIndex) in binding" v-bind:data-label="entryIndex" >
                                         <!-- {{bindingIndex}} 
                                         {{entryIndex}}  -->
                                         {{entry.value}}
