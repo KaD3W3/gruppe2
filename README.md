@@ -259,4 +259,4 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 [Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_2_Markdown_Elvis_Digital-Asset-Management.md
 [Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_3_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
 [Zusammengeführte Tabelle]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_4_Taxonomie_Struktur_zusammengef%C3%BChrte_Tabelle.xlsx
-[Link zur WebApp] https://kad3w3.github.io/gruppe2/
+[Link zur WebApp]: https://kad3w3.github.io/gruppe2/
