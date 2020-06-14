@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cornelsen Taxonomie Webapp (Sparql Abfragen)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    
+    <!-- CSS-Framework einfügen (Hier: miniCSS-Framework) 
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"
+    /> -->  
+    <link rel="stylesheet" type="text/css" href="mini-default.min.css" media="screen" /> 
+    
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+    <!-- Axios, used for easy http-Requests-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    
+        <div class="container">           <!-- Container für CSS-->
+        <!-- Bereich wird von Vue-Instanz Nr. 2 kontrolliert-->
+        <div id="app2">
+
+            <h1>Cornelsen Taxonomie Webapp (Sparql Abfragen) </h1>
+            <!-- <button v-on:click="showSuchAnfrageBereich">Suchanfrage einblenden</button> -->
+            <button class="primary" v-on:click="showFilteroptionen">Filteroptionen einblenden</button>
+
+            <!-- Form Filterkriterien-->
+            <div v-if="this.filteroptionen">   
+                <!-- <th v-for="(result, index) in this.variables">{{result}}</th> -->
+                <form>
+                    <fieldset>
+                    <legend>Suchergbinsse filtern</legend>
+                    <!--  Splate 1 -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <div><b>Wonach soll gefiltert werden?</b></div>
+                            <input  type="checkbox" 
+                                    id="ConceptScheme"
+                                    value="ConceptScheme"                                                        
+                                    v-model="checkedFilter" 
+                                    checked=true>                                        
+                            <label for="ConceptScheme">Thesaurus (#ConceptScheme)?</label> 
+                            <br>
+
+                            <input  type="checkbox" 
+                                    id="Concept"
+                                    value="Concept"                                                        
+                                    v-model="checkedFilter" >
+                            <label for="Concept">Konzepte (#Concept)?</label> 
+                            <br>
+                
+                            <input  type="checkbox" 
+                                    id="prefLabel"
+                                    value="prefLabel"                             
+                                    v-model="checkedFilter" >
+                            <label for="prefLabel">Bevorzugte Beziechnung (#prefLabel)?</label> 
+                            <br>
+
+                            <input  type="checkbox" 
+                                    id="altLabel"
+                                    value="altLabel"                             
+                                    v-model="checkedFilter" >
+                            <label for="altLabel">Synonyme (#altLabel)?</label> 
+                            <br>  
+                        
+                            <!-- Splate 2 -->                            
+                            <input  type="checkbox" 
+                                    id="definition"
+                                    value="definition"                             
+                                    v-model="checkedFilter" >
+                            <label for="definition">Beschreibung (#definition)?</label> 
+                            <br>                                     
+
+                            <input  type="checkbox" 
+                                    id="broader"
+                                    value="broader"                             
+                                    v-model="checkedFilter" >
+                            <label for="broader">Oberbegriff (#broader)?</label> 
+                            <br>   
+
+                            <input  type="checkbox" 
+                                    id="related"
+                                    value="related"                             
+                                    v-model="checkedFilter" >
+                            <label for="related">Querverweis (#related)?</label> 
+                            <br>
+                            
+                            <input  type="checkbox" 
+                                    id="notation"
+                                    value="notation"                             
+                                    v-model="checkedFilter" >
+                            <label for="notation">Nummerierung (#notation)?</label> 
+                            <br>
+                        </div> <!-- ENDE Z1 S1-->
+                    
+                        <!-- Splate 3 -->
+                        <div class="col-sm">
+                            <div>
+                                <!-- vSubject == true && vPredicate == true && vObject == true ?-->
+                                <!-- Welche Spalten sollten angezeigt werden? -->
+                                <div><b>Welche Spalten angezeigen?</b></div>                        
+                                <input  type="checkbox" 
+                                id="subject"
+                                value="subject"                     
+                                v-model="vSubject" >
+                                <label for="subject">Subjekt (?subject)?</label> 
+                                <br>                                     
+                                
+                                <input  type="checkbox" 
+                                        id="predicate"
+                                        value="predicate"                             
+                                        v-model="vPredicate" >
+                                <label for="predicate">Prädikat (?predicate)?</label> 
+                                <br>   
+
+                                <input  type="checkbox" 
+                                        id="object"
+                                        value="object"                             
+                                        v-model="vObject" >
+                                <label for="object">Objekt (?object)?</label> 
+                                <br>                                          
+                            </div>
+                        
+                            <!-- Zeile 2 -->
+                            <!-- Suchbereich-->
+                            <div>
+                                <div> <!-- <div v-if="this.suchAnfrageBereich">-->
+                                    <br>
+                                    <div>Nach Begriffen suchen:</div>
+                                    <input  type="text"
+                                            id="suchBegriff"
+                                            placeholder="Suchbegriff eingeben..."
+                                            v-model="suchBegriff"          
+                                    >
+                                    <br>
+                                    <!-- Als Parameter "$event" vom Click-Event übergeben -->
+                                    <!-- <button v-on:click="checkCredentials($event)">Abfrage absenden</button> -->   
+                                </div>
+
+                                <div>
+                                    <div>Suchen in...</div>
+                                    <select v-model="sucheInSelected">
+                                        <option disabled value="">Bitte etwas auswählen</option>
+                                        <option value="?subject">Subjekte</option>
+                                        <option value="?object">Objekte</object>
+                                    </select>
+                                </div>
+                            </div>
+                        </div> <!--ENDE Z1 S2 -->
+                    </div> <!-- Ende Z1 -->                          
+                    </fieldset>                  
+                </form>
+                <!-- Als Parameter "$event" vom Click-Event übergeben -->
+                <button class="primary" v-on:click="datenFiltern()">Abfrage absenden</button>            
+            </div>
+            
+        </div>
+
+
+            <!-- Bereich wird von Vue-Instanz Nr. 1 kontrolliert-->
+            <div id="app1">        
+                <button class="primary" v-on:click="changeAnzeige">Ausblenden/Einblenden</button>
+                <div v-if="this.vError">
+                    {{ info }} Anzahl der Ergebnisse: <b> {{tripleAnzahl}} </b> 
+                </div>      
+                <div v-if="!this.vError" style="text-align: right">
+                    Anzahl der Ergebnisse: <b> {{tripleAnzahl}} </b>           
+                </div>        
+                <template v-if="this.allesAnzeigen">
+                    <div v-if="this.querybindings[0]">
+                        <table border="0" class="hoverable" >
+                            <thead>
+                                <tr>
+                                    <th v-for="(result, index) in this.variables">{{result}}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(binding, bindingIndex) in this.querybindings">
+                                    <td v-for="(entry,entryIndex) in binding" data-label="" >
+                                        <!-- {{bindingIndex}} 
+                                        {{entryIndex}}  -->
+                                        {{entry.value}}
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+                    <!-- </div> Container für CSS-->
+            </div>
+        </div>  <!-- ENDE: Container für CSS-->  
+
+    <script src="app.js"></script>        <!-- Einbinden des App-Codes -->
+  </body>
+</html>
