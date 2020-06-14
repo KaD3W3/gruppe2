@@ -56,7 +56,7 @@ Diskussionen erfordert hatte, war der erste Entwurf der Gruppe fertig.
 ######
 
 Die folgende Grafik zeigt den mittels eines Mindmaps ersten Entwurf der Gruppe 2.
-![Erster Entwurf der Taxonomie Gruppe 2](https://github.com/KaD3W3/gruppe2/blob/master/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png)
+![Erster Entwurf der Taxonomie Gruppe 2](https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png)
 ###### Abbildung 1: Erster Taxonomie-Entwurf als Mindmap (Gruppe 2)
 
 ######
@@ -178,7 +178,7 @@ Nach dem Feedback vom Cornelsen Verlag wurde versucht, das Problem der Synonyme 
 Synonyme verwendet werden sollten.
 Zuvor gelöschte Konzepte oder als Synonym eingesetzte Konzepte wurden wieder eingesetzt (siehe
 Anhang 3).
- 
+![Tabelle vor Qualitätsüberprüfung](https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_3_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx)
 ###### Abbildung 3: Auszug Taxonomie-Entwurf als Excel-Tabelle
 
 Im letzten Schritt wurde versucht, die Strukturen der beiden Gruppen zu einer verschmelzen zu
@@ -254,8 +254,8 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 ##### 3) [Tabelle vor Qualitätsüberprüfung]
 ##### 4) [Zusammengeführte Tabelle]
 
-[Grafik erstes Modell - als Bild]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png
-[Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_2_Markdown_Elvis_Digital-Asset-Management.md
-[Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_3_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
-[Zusammengeführte Tabelle]: https://github.com/KaD3W3/gruppe2/blob/master/Anhang_4_Taxonomie_Struktur_zusammengef%C3%BChrte_Tabelle.txt
+[Grafik erstes Modell - als Bild]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png
+[Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_2_Markdown_Elvis_Digital-Asset-Management.md
+[Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_3_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
+[Zusammengeführte Tabelle]: http:NochZuErgänzen
 
