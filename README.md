@@ -178,7 +178,7 @@ Nach dem Feedback vom Cornelsen Verlag wurde versucht, das Problem der Synonyme 
 Synonyme verwendet werden sollten.
 Zuvor gelöschte Konzepte oder als Synonym eingesetzte Konzepte wurden wieder eingesetzt (siehe
 Anhang 3).
-![Tabelle vor Qualitätsüberprüfung](https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_3_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx)
+![Auszug Taxonomie-Entwurf vor Qualitätsüberprüfung](https://user-images.githubusercontent.com/50373209/82310892-41d05200-99c5-11ea-9ef9-bb26658dd13e.PNG)
 ###### Abbildung 3: Auszug Taxonomie-Entwurf als Excel-Tabelle
 
 Im letzten Schritt wurde versucht, die Strukturen der beiden Gruppen zu einer verschmelzen zu
