@@ -254,6 +254,7 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 ##### 3) [Tabelle vor Qualitätsüberprüfung]
 ##### 4) [Zusammengeführte Tabelle]
 ##### 5) [Link zur WebApp]
+##### 6) [Poster vom LSWT 2020]
 
 [Grafik erstes Modell - als Bild]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png
 [Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_2_Markdown_Elvis_Digital-Asset-Management.md
