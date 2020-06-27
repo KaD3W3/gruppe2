@@ -90,7 +90,7 @@ Vorgehensweise wieder.
 ![Vorgehensweise](https://user-images.githubusercontent.com/50373209/81853487-c43bba80-955c-11ea-88db-d73b7f477e3a.png)
 ###### Abbildung 2: Zusammenfassung der Vorgehensweise
 
-Auf Basis eines Impulsvortrages durch einen Terminologie-Experten, wurde die zusammengeführte Taxonomie-Tabelle im Anschluss eine weiteres Mal überarbeitet und für alle Konzepte (bis zu Ebene 3) versucht eine Definition zu implementieren. 
+Auf Basis eines Impulsvortrages durch einen Terminologie-Experten, wurde die zusammengeführte Taxonomie-Tabelle im Anschluss eine weiteres Mal überarbeitet und für alle Konzepte (bis zu Ebene 3) versucht eine Definition zu implementieren.
 
 ## 3) Schwierigkeiten
 #### a) Modellierungsoptionen
@@ -182,7 +182,7 @@ Anhang 3).
 ###### Abbildung 3: Auszug Taxonomie-Entwurf als Excel-Tabelle
 
 Im letzten Schritt wurde versucht, die Strukturen der beiden Gruppen zu einer verschmelzen zu
-lassen. Was, wie schon erwähnt, nicht einfach war. 
+lassen. Was, wie schon erwähnt, nicht einfach war.
 Im aktuellen Modell sind 315 einzelne Konzepte und 12 Oberbegriffe enthalten.
 Das Ganze wird unter dem Elvis-Thesaurus geführt (siehe Anhang 4).
 ######
@@ -194,7 +194,7 @@ und kommentiert.
 Im Anschluss wurden dann die Tabellen von den Gruppen nochmals überarbeitet und schließlich zu
 einer Gesamttabelle zusammengeführt.
 Im nächsten Schritt des Qualitätssicherungsprozesses wurde jede einzelne Zeile (anfangs über 400
-Zeilen) der zusammengeführten Excel-Tabelle mit der Logik der Elvis-Struktur geprüft und 
+Zeilen) der zusammengeführten Excel-Tabelle mit der Logik der Elvis-Struktur geprüft und
 die Konzepte durch beide Projektgruppen abgestimmt.
 Unter der Verwendung der “...ist ein...”-Logik konnten fälschlicherweise angenommene Beziehungen
 erkannt und verbessert werden.
@@ -222,7 +222,7 @@ alle Beteiligten geleistet.
 
 Andererseits hätte der Verlauf des Projekts verbessert werden können, wenn die Studierenden
 Zugang zum Elvis-System oder zu Videos in Bezug auf die Nutzung gehabt hätten, um sich das
-System bildlich vorzustellen. Des Weiteren wäre die Abstimmung mit der anderen Projektgruppe vermutlich einfacher verlaufen, 
+System bildlich vorzustellen. Des Weiteren wäre die Abstimmung mit der anderen Projektgruppe vermutlich einfacher verlaufen,
 wenn die Definitionen zu den einzelnen Konzepten bereits von Beginn an implementiert worden wären.
 Darüber hinaus bleibt zu vermuten, dass die Kommunikationsherausforderungen einfacher zu lösen
 gewesen wären, wenn das Projekt nicht ausschließlich online durchgeführt worden wäre.
@@ -260,3 +260,4 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 [Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_3_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
 [Zusammengeführte Tabelle]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_4_Taxonomie_Struktur_zusammengef%C3%BChrte_Tabelle.xlsx
 [Link zur WebApp]: https://kad3w3.github.io/gruppe2/
+[Poster vom LSWT 2020]: https://github.com/KaD3W3/gruppe2/blob/master/data/posterlswt2020V1.3.pdf
