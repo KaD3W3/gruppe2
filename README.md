@@ -208,7 +208,10 @@ Zudem wurde ein Großteil der Qualitätssicherung durch das wiederholte, iterati
 Besprechen der einzelnen Konzepte, sowohl während der Arbeit an der gruppeneigenen Tabelle als
 auch nach der Zusammenführung der beiden Gruppentabellen, erreicht.
 
-## 6) Kritische Würdigung der Ergebnisse
+## 6) Präsentation der Ergebnisse
+Am 17.06.2020 wurden die Ergebnisse der beiden Gruppen in Form eines Posters (siehe Anhang 6) auf dem Leipziger Semantic Web Tag vorgestellt. Dort konnten Fragen zum Projekt und zu den vorgestellten entwickelten Webapps gestellt werden. Eine weitere Vorführung der beiden Demos und des Posters wurde zusätzlich innerhalb des Modulkurses durchgeführt.
+
+## 7) Kritische Würdigung der Ergebnisse
 Zusammenfassend kann festgehalten werden, dass das Projektziel, ein Taxonomie-Modell zu
 entwerfen, welches durch den Auftraggeber für die Automatisierung mittels eines IT-Systems
 weiterverwendet werden könnte, durch die Projektgruppe erreicht wurde.
