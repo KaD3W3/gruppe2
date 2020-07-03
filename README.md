@@ -208,10 +208,27 @@ Zudem wurde ein Großteil der Qualitätssicherung durch das wiederholte, iterati
 Besprechen der einzelnen Konzepte, sowohl während der Arbeit an der gruppeneigenen Tabelle als
 auch nach der Zusammenführung der beiden Gruppentabellen, erreicht.
 
-## 6) Präsentation der Ergebnisse
+## 6) Erstellung SKOS-Modell (RDF-Format) und Webapp
+Mit Hilfe von OpenRefine (siehe https://openrefine.org/) wurde anschließend unter Anwendung von SKOS (Simple Knowledge 
+Organisation System) die zusammengeführte Excel-Tabelle der Elvis-Taxonomie (siehe Anhang 4) in das RDF-Format überführt. 
+Die dabei erzeugte Turtle-Datei (siehe Anhang 5) sollte dann die Daten-Grundlage für die Weiterverarbeitung bilden. 
+######
+Um schließlich auf die Daten mittels SPARQL-Abfragen zugreifen zu können wurde der Apache Jena Fuseki-Server 
+(siehe https://jena.apache.org/documentation/fuseki2/) als SPARQL-Endpoint genutzt. Zu Testzwecken wurde dieser 
+anfänglich von den Studenten lokal betrieben und anschließend ins Web überführt und mit Hilfe der Cloud Application 
+Platform Heroku (siehe https://www.heroku.com/) öffentlich als Endpoint bereitgestellt.
+######
+Die Entwicklung der Webapp (siehe Anhang 7, Link zur WebApp) erfolgte dann auf Basis des JavaScript Frameworks Vue.js 
+(siehe https://vuejs.org/), welches für die Erstellung von Single-Page-Webanwendungen geeignet ist. Als Dienst zum Konsumieren von REST APIs
+wurde dabei Axios (siehe https://axios.nuxtjs.org/) genutzt und so mittel HTTP-Requests (GET-Requests) der SPARQL-Endpoint-Server abgefragt.
+Um die Webbapp schließlich auch vom Design her ansprechend zu gestalten wurde abschließend als CSS das Framework mini.css (siehe https://minicss.org/) implementiert, 
+welches die Webbapp nun optisch ansprechend, modern und zusätzlich im responsive Design (für die mobile Nutzung) darstellt.   
+ 
+
+## 7) Präsentation der Ergebnisse
 Am 17.06.2020 wurden die Ergebnisse der beiden Gruppen in Form eines Posters (siehe Anhang 6) auf dem Leipziger Semantic Web Tag vorgestellt. Dort konnten Fragen zum Projekt und zu den vorgestellten entwickelten Webapps gestellt werden. Eine weitere Vorführung der beiden Demos und des Posters wurde zusätzlich innerhalb des Modulkurses durchgeführt.
 
-## 7) Kritische Würdigung der Ergebnisse
+## 8) Kritische Würdigung der Ergebnisse
 Zusammenfassend kann festgehalten werden, dass das Projektziel, ein Taxonomie-Modell zu
 entwerfen, welches durch den Auftraggeber für die Automatisierung mittels eines IT-Systems
 weiterverwendet werden könnte, durch die Projektgruppe erreicht wurde.
@@ -256,12 +273,15 @@ entsprechendem Einsatz und Aufwand zu einem guten Ergebnis führen können.
 ##### 2) [Grafik erstes Modell - als Markdown-Datei]
 ##### 3) [Tabelle vor Qualitätsüberprüfung]
 ##### 4) [Zusammengeführte Tabelle]
-##### 5) [Link zur WebApp]
+##### 5) [SKOS-RDF-Modell als Turtle-Datei]
 ##### 6) [Poster vom LSWT 2020]
+##### 7) [Link zur WebApp]
+
 
 [Grafik erstes Modell - als Bild]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_1_Mindmap_Elvis_Digital-Asset-Management.png
 [Grafik erstes Modell - als Markdown-Datei]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_2_Markdown_Elvis_Digital-Asset-Management.md
 [Tabelle vor Qualitätsüberprüfung]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_3_Tabelle%20vor%20Qualit%C3%A4ts%C3%BCberpr%C3%BCfung.xlsx
 [Zusammengeführte Tabelle]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_4_Taxonomie_Struktur_zusammengef%C3%BChrte_Tabelle.xlsx
+[SKOS-RDF-Modell als Turtle-Datei]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_5_RDF_SKOS-Modell.ttl
+[Poster vom LSWT 2020]: https://github.com/KaD3W3/gruppe2/blob/master/data/Anhang_6_Poster_LSWT_2020V1.3.pdf
 [Link zur WebApp]: https://kad3w3.github.io/gruppe2/
-[Poster vom LSWT 2020]: https://github.com/KaD3W3/gruppe2/blob/master/data/posterlswt2020V1.3.pdf
