@@ -221,13 +221,10 @@ Die Entwicklung der Webapp (siehe Anhang 7, Link zur WebApp) erfolgte dann auf B
 (siehe https://vuejs.org/), welches für die Erstellung von Single-Page-Webanwendungen geeignet ist. Als Dienst zum Konsumieren von REST APIs
 wurde dabei Axios (siehe https://axios.nuxtjs.org/) genutzt und so mittel HTTP-Requests (GET-Requests) der SPARQL-Endpoint-Server abgefragt.
 Um die Webbapp schließlich auch vom Design her ansprechend zu gestalten wurde abschließend als CSS das Framework mini.css (siehe https://minicss.org/) implementiert, 
-welches die Webbapp optisch ansprechend, modern und zugleich im responsive Design (für die mobile Nutzung) darstellt.   
- 
+welches die Webbapp optisch ansprechend, modern und zugleich im responsive Design (für die mobile Nutzung) darstellt.  
+Am 17.06.2020 wurden dann die Ergebnisse der beiden Gruppen in Form eines Posters (siehe Anhang 6) auf dem Leipziger Semantic Web Tag vorgestellt. Dort konnten Fragen zum Projekt und zu den vorgestellten entwickelten Webapps gestellt werden. Eine weitere Vorführung der beiden Demos und des Posters wurde zusätzlich innerhalb des Modulkurses durchgeführt. 
 
-## 7) Präsentation der Ergebnisse
-Am 17.06.2020 wurden die Ergebnisse der beiden Gruppen in Form eines Posters (siehe Anhang 6) auf dem Leipziger Semantic Web Tag vorgestellt. Dort konnten Fragen zum Projekt und zu den vorgestellten entwickelten Webapps gestellt werden. Eine weitere Vorführung der beiden Demos und des Posters wurde zusätzlich innerhalb des Modulkurses durchgeführt.
-
-## 8) Kritische Würdigung der Ergebnisse
+## 7) Kritische Würdigung der Ergebnisse
 Zusammenfassend kann festgehalten werden, dass das Projektziel, ein Taxonomie-Modell zu
 entwerfen, welches durch den Auftraggeber für die Automatisierung mittels eines IT-Systems
 weiterverwendet werden könnte, durch die Projektgruppe erreicht wurde.
