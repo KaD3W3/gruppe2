@@ -1,0 +1,1976 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://example.com/Elvis+%28Elvis-Thesaurus%29> a skos:ConceptScheme;
+  skos:altLabel "DAM", "Elvis Digital-Asset-Management", "MAMS-Elvis", "System";
+  skos:notation "0";
+  skos:prefLabel "Elvis (Elvis-Thesaurus)" .
+
+<http://example.com/Asset> a skos:Concept;
+  skos:altLabel "Assetbestand", "Assetübersicht", "Media", "Medien", "Medien Assets",
+    "Original Agentur Medien", "Original-Asset";
+  skos:definition "Sind ein Teil der Unternehmenswerte des Cornelsen Verlages in Form von Texten oder Medienelementen, also redaktionellen Inhalten oder künstlerischen Werken, die in digitaler Form vorliegen und mit Metadaten versehen sind."@DE;
+  skos:notation "1";
+  skos:prefLabel "Asset";
+  skos:related <http://example.com/Metadaten> .
+
+<http://example.com/Bild> a skos:Concept;
+  skos:altLabel "Bildmedien", "Picture";
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ist ein, mit künstlerischen Mitteln auf einer Fläche Dargestelltes, Wiedergegebenes; Gemälde, Zeichnung o. Ä."@DE;
+  skos:notation "1.1";
+  skos:prefLabel "Bild" .
+
+<http://example.com/Bild-Datei> a skos:Concept;
+  skos:broader <http://example.com/Bild>;
+  skos:definition "Ist eine Datei im Datenformat .jpg, .gif, .tif usw."@DE;
+  skos:notation "1.1.1";
+  skos:prefLabel "Bild-Datei" .
+
+<http://example.com/Original-Bild> a skos:Concept;
+  skos:broader <http://example.com/Bild>;
+  skos:definition "Eine unverändertes im Ursprung beibehaltendes Digitale Bild"@DE;
+  skos:notation "1.1.2";
+  skos:prefLabel "Original-Bild" .
+
+<http://example.com/Produktionsbild> a skos:Concept;
+  skos:broader <http://example.com/Bild>;
+  skos:definition "Ist ein produktbezogenes Asset in Form eines Bildes."@DE;
+  skos:notation "1.1.3";
+  skos:prefLabel "Produktionsbild" .
+
+<http://example.com/Illustrationen> a skos:Concept;
+  skos:broader <http://example.com/Bild>;
+  skos:definition "Ein Bild das den Begriff visualisiert/darstellt"@DE;
+  skos:notation "1.1.4";
+  skos:prefLabel "Illustrationen" .
+
+<http://example.com/Agenturbild> a skos:Concept;
+  skos:broader <http://example.com/Bild>;
+  skos:definition "Bilder die Rechtlich der Agentur gehören"@DE;
+  skos:notation "1.1.5";
+  skos:prefLabel "Agenturbild" .
+
+<http://example.com/Agenturbild-Original> a skos:Concept;
+  skos:broader <http://example.com/Agenturbild>;
+  skos:notation "1.1.5.1";
+  skos:prefLabel "Agenturbild-Original" .
+
+<http://example.com/Audio> a skos:Concept;
+  skos:altLabel "Audio Asset", "Audio Daten", "Madia Audio", "Ton";
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ist ein spezielles Asset zur Beschreibung von Ton-Sequenzen."@DE;
+  skos:notation "1.2";
+  skos:prefLabel "Audio" .
+
+<http://example.com/Audio-Datei> a skos:Concept;
+  skos:broader <http://example.com/Audio>;
+  skos:definition "Ist eine Datei im Datenformat wie z. B. .wav, .mp3, usw."@DE;
+  skos:notation "1.2.1";
+  skos:prefLabel "Audio-Datei" .
+
+<http://example.com/K%C3%BCnstlerisches+Werk> a skos:Concept;
+  skos:altLabel "Kunstgegenstand", "Kunstwerk";
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ist ein ästhetischer physischer Gegenstand oder eine künstlerische Schöpfung."@DE;
+  skos:notation "1.3";
+  skos:prefLabel "Künstlerisches Werk" .
+
+<http://example.com/Redaktioneller+Inhalt> a skos:Concept;
+  skos:altLabel " redaktionellem Beitrag ", "redaktionellen Artikel";
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Es handelt es sich, wenn der Beitrag seiner Gestaltung nach als objektive neutrale Berichterstattung durch ein  Medienunternehemen erscheint."@DE;
+  skos:notation "1.4";
+  skos:prefLabel "Redaktioneller Inhalt" .
+
+<http://example.com/Video> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ist ein spezielles Asset zur Beschreibung von Film-Sequenzen (Bild und Ton kombiniert)"@DE;
+  skos:notation "1.5";
+  skos:prefLabel "Video" .
+
+<http://example.com/Video-Datei> a skos:Concept;
+  skos:broader <http://example.com/Video>;
+  skos:definition "Ist eine Datei im Datenformat .mp4 usw."@DE;
+  skos:notation "1.5.1";
+  skos:prefLabel "Video-Datei" .
+
+<http://example.com/Schulungsvideos> a skos:Concept;
+  skos:altLabel "Schulungsvideo";
+  skos:broader <http://example.com/Video>;
+  skos:definition "Ist ein spezielles Video zur Schulung der Benutzer im Umgang mit dem Elvis-System."@DE;
+  skos:notation "1.5.2";
+  skos:prefLabel "Schulungsvideos" .
+
+<http://example.com/Animation> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ist ein Medien-Asset Oder Animation ist jede Technik, bei der durch das Erstellen und Anzeigen von Einzelbildern für den Betrachter ein bewegtes Bild geschaffen wird"@DE;
+  skos:notation "1.6";
+  skos:prefLabel "Animation" .
+
+<http://example.com/Animations-Datei> a skos:Concept;
+  skos:broader <http://example.com/Animation>;
+  skos:definition "Ist eine Datei mit bewegten Bildern."@DE;
+  skos:notation "1.6.1";
+  skos:prefLabel "Animations-Datei" .
+
+<http://example.com/Text> a skos:Concept;
+  skos:altLabel "Medienelement";
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Schriftich verfasstes Gedanken/Wort"@DE;
+  skos:notation "1.7";
+  skos:prefLabel "Text" .
+
+<http://example.com/Manuskript> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ist ein produktbezogenes Asset in Form eines hangeschriebenen Dokuments."@DE;
+  skos:notation "1.8";
+  skos:prefLabel "Manuskript" .
+
+<http://example.com/Manuskript-Datei> a skos:Concept;
+  skos:broader <http://example.com/Manuskript>;
+  skos:definition "Ist eine Textdatei, die Handgeschriebene Inhalte enthält."@DE;
+  skos:notation "1.8.1";
+  skos:prefLabel "Manuskript-Datei" .
+
+<http://example.com/Dokument> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Datei, die durch ein Computerprogramm verwaltet oder bearbeitet werden kann"@DE;
+  skos:notation "1.9";
+  skos:prefLabel "Dokument" .
+
+<http://example.com/Layout-Dokument> a skos:Concept;
+  skos:broader <http://example.com/Dokument>;
+  skos:definition "Ist ein produktbezogenes Asset zur Layout-Gestaltung eines Produktes bzw. Titels."@DE;
+  skos:notation "1.9.1";
+  skos:prefLabel "Layout-Dokument" .
+
+<http://example.com/Asset> a skos:Concept;
+  skos:broader <http://example.com/Dokument>;
+  skos:definition "Assets sind hier in diesem Fall Texte, also redaktionelle Inhalte oder künstlerische Werke, die in digitaler Form vorliegen und mit Metadaten versehen sind."@DE;
+  skos:notation "1.9.2";
+  skos:prefLabel "Asset" .
+
+<http://example.com/InDesign-Dokument> a skos:Concept;
+  skos:broader <http://example.com/Dokument>;
+  skos:definition "Ist ein in InDesign erstelltes Dokument, in dem Assets direkt aus Elvis per Drag & Drop platziert werden können."@DE;
+  skos:notation "1.9.3";
+  skos:prefLabel "InDesign-Dokument" .
+
+<http://example.com/PDF> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ist ein spezielles Asset zur plattformunabhängigen Darstellung von Inhalten."@DE;
+  skos:notation "1.10";
+  skos:prefLabel "PDF" .
+
+<http://example.com/PDF-Datei> a skos:Concept;
+  skos:broader <http://example.com/PDF>;
+  skos:definition "Ist eine Datei im Datenformat .pdf mit der Inhalte plattformunabhängig dargestellt werden können."@DE;
+  skos:notation "1.10.1";
+  skos:prefLabel "PDF-Datei" .
+
+<http://example.com/Print-PDF> a skos:Concept;
+  skos:altLabel "Druck-Dateien";
+  skos:broader <http://example.com/PDF>;
+  skos:definition "Ist ein spezielles PDF welches als Druckvorlage bzw. Grundlage dient."@DE;
+  skos:notation "1.10.2";
+  skos:prefLabel "Print-PDF" .
+
+<http://example.com/Cover> a skos:Concept;
+  skos:altLabel "vorläufige Umschlagseiten";
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ist eine Umschlagsseite eines Buches bzw. Titels."@DE;
+  skos:notation "1.11";
+  skos:prefLabel "Cover" .
+
+<http://example.com/Cover-Datei> a skos:Concept;
+  skos:broader <http://example.com/Cover>;
+  skos:definition "Ist eine Datei in einem Bildformat zur Visualisierung von Umschalgsseiten eines Titels."@DE;
+  skos:notation "1.11.1";
+  skos:prefLabel "Cover-Datei" .
+
+<http://example.com/ISO> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ist ein spezielles Asset und stellt das Speicherabbild einer CD oder DVD dar."@DE;
+  skos:notation "1.12";
+  skos:prefLabel "ISO" .
+
+<http://example.com/ISO-Datei> a skos:Concept;
+  skos:broader <http://example.com/ISO>;
+  skos:definition "Ist ein Speicherabbild des Dateisystems einer CD oder DVD und dient als Quelldatei zur Vervielfältigung."@DE;
+  skos:notation "1.12.1";
+  skos:prefLabel "ISO-Datei" .
+
+<http://example.com/Freie+Bildgeber-Asset> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Bilder bei denen kein Copiright dahinterstecken"@DE;
+  skos:notation "1.13";
+  skos:prefLabel "Freie Bildgeber-Asset" .
+
+<http://example.com/Standard-Asset> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Sind Picturemaxx-Assets und müssen über den Picturemaxx-Hotfolder rechtskonform in Elvis hochgeladen werden."@DE;
+  skos:notation "1.14";
+  skos:prefLabel "Standard-Asset" .
+
+<http://example.com/Nichtstandard-Asset> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Sind keine Picturemaxx-Assets und müssen über das Upload-Tool rechtskonform importiert werden."@DE;
+  skos:notation "1.15";
+  skos:prefLabel "Nichtstandard-Asset" .
+
+<http://example.com/Picturemaxx-Asset> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ein Anbieter für Assts von der Firma Picturemaxx"@DE;
+  skos:notation "1.16";
+  skos:prefLabel "Picturemaxx-Asset" .
+
+<http://example.com/produktbezogenes+Asset> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Produktbezogenes Assets sind Produktionsbilder, Layout-Dokumente und Manuskripte. "@DE;
+  skos:notation "1.17";
+  skos:prefLabel "produktbezogenes Asset" .
+
+<http://example.com/Auftrags-Asset> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Ist ein von einem externen Dienstleister produziertes Asset, z. B. ein von einem Tonstudio produziertes Audio-Asset (also im Auftrag des Verlages). "@DE;
+  skos:notation "1.18";
+  skos:prefLabel "Auftrags-Asset" .
+
+<http://example.com/Dateityp> a skos:Concept;
+  skos:altLabel "Asset-Datei", "Datei", "Dateiformat", "Original-Datei";
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Beschreibt die Darstellung und Anordnung von Daten innerhalb einer Datei"@DE;
+  skos:notation "1.19";
+  skos:prefLabel "Dateityp" .
+
+<http://example.com/Asset-Version> a skos:Concept;
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Sie können anhand der Versionen eines Assets nachvollziehen, von wem es wann und wie oft verändert wurde."@DE;
+  skos:notation "1.20";
+  skos:prefLabel "Asset-Version" .
+
+<http://example.com/aktuelle+Version> a skos:Concept;
+  skos:broader <http://example.com/Asset-Version>;
+  skos:definition "Der aktuell verwendetet Asset-Version"@DE;
+  skos:notation "1.20.1";
+  skos:prefLabel "aktuelle Version" .
+
+<http://example.com/neue+Version> a skos:Concept;
+  skos:broader <http://example.com/Asset-Version>;
+  skos:definition "Eine überarbeitete Fassung  des Assests-Version"@DE;
+  skos:notation "1.20.2";
+  skos:prefLabel "neue Version" .
+
+<http://example.com/alte+Version> a skos:Concept;
+  skos:broader <http://example.com/Asset-Version>;
+  skos:definition "Ein Asset-Version die vor der aktuellen Version entstanden ist."@DE;
+  skos:notation "1.20.3";
+  skos:prefLabel "alte Version" .
+
+<http://example.com/Asset-Variation> a skos:Concept;
+  skos:altLabel "Anderer Ausschnitt eines Assets", "Kopie von einem Asset", "Variation";
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Sind  abgewandelte Assts von den Original-Daten, die dann ohne Rechtliche konflikte mit dem Rechteinhaber des Assts verwendet werden können. "@DE;
+  skos:notation "1.21";
+  skos:prefLabel "Asset-Variation";
+  skos:related <http://example.com/Kollektionen> .
+
+<http://example.com/Kollektion> a skos:Concept;
+  skos:altLabel "Asset-Sammlung", "Collection", "Verknüpfungen";
+  skos:broader <http://example.com/Asset>;
+  skos:definition "Eine Auswahl oder Zusammenstellung von Assets in einem Ablageverzeichnis"@DE;
+  skos:notation "1.22";
+  skos:prefLabel "Kollektion" .
+
+<http://example.com/Ursprungskollektion> a skos:Concept;
+  skos:broader <http://example.com/Kollektion>;
+  skos:definition "Eine ursprüngliche Auswahl oder Zusammenstellung von Assets in einem Ablageverzeichnis"@DE;
+  skos:notation "1.22.1";
+  skos:prefLabel "Ursprungskollektion" .
+
+<http://example.com/Zielkollektion> a skos:Concept;
+  skos:broader <http://example.com/Kollektion>;
+  skos:definition "Das Ablegen eines Assets auf das gewünschte Kollektionsverzeichnis"@DE;
+  skos:notation "1.22.2";
+  skos:prefLabel "Zielkollektion" .
+
+<http://example.com/ISO-Kollektion> a skos:Concept;
+  skos:altLabel "Kollektion \"ISO\"";
+  skos:broader <http://example.com/Kollektion>;
+  skos:definition "Eine Auswahl oder Zusammenstellung von ISO-Daten in einem Ablageverzeichn"@DE;
+  skos:notation "1.22.3";
+  skos:prefLabel "ISO-Kollektion" .
+
+<http://example.com/Kollektion+im+pers%C3%B6nlichen+Bereich> a skos:Concept;
+  skos:altLabel "Produktablage";
+  skos:broader <http://example.com/Kollektion>;
+  skos:definition "Ist eine Bereich persönlicher Asstest, die so nicht in der Suche gefunden werden können"@DE;
+  skos:notation "1.22.4";
+  skos:prefLabel "Kollektion im persönlichen Bereich" .
+
+<http://example.com/Kollektionen+im+Titelordner> a skos:Concept;
+  skos:broader <http://example.com/Kollektion>;
+  skos:definition "Eine Kollektionen in denen drei weitere Kollektionen enthalten sind (Layout, PU-Ablag und Leuchttisch)"@DE;
+  skos:notation "1.22.5";
+  skos:prefLabel "Kollektionen im Titelordner" .
+
+<http://example.com/ISBN-Layout> a skos:Concept;
+  skos:broader <http://example.com/Kollektion>;
+  skos:definition "Beinhaltet alle Layout-Dokumente des zu produzierenden Titels gestellt werden, damit Nutzer in der PU Buch darauf zugreifen und die Dokumente einzelnen Strukturknoten zuweisen können."@DE;
+  skos:notation "1.22.6";
+  skos:prefLabel "ISBN-Layout" .
+
+<http://example.com/ISBN-PU-Ablage> a skos:Concept;
+  skos:broader <http://example.com/Kollektion>;
+  skos:definition "Beinhaltet alle Begleitmaterial-Dateien des zu produzierenden Titels gestellt werden, damit Nutzer in der PU Buch darauf zugreifen und die Dokumente als sogenannte AddOns einzelnen Strukturknoten zuweisen können."@DE;
+  skos:notation "1.22.7";
+  skos:prefLabel "ISBN-PU-Ablage" .
+
+<http://example.com/ISBN-Leuchttisch> a skos:Concept;
+  skos:broader <http://example.com/Kollektion>;
+  skos:definition "Zusammenstellung recherchierter Assets und potentiell verwendbarer Assets aus anderen Titeln, wenn sie für den neuen Titel verwendet werden."@DE;
+  skos:notation "1.22.8";
+  skos:prefLabel "ISBN-Leuchttisch" .
+
+<http://example.com/Ordner> a skos:Concept;
+  skos:altLabel "Ablagepfad", "Elvis-Ordner-Struktur", "Folder", "Ordnerablage", "Speicherort",
+    "Strukturkonto", "Verzeichnis";
+  skos:definition "Ist das grundlegende Sturkrurierungselement zur Ablage und Verwaltung von Assets."@DE;
+  skos:notation "2";
+  skos:prefLabel "Ordner" .
+
+<http://example.com/User-Verzeichnis> a skos:Concept;
+  skos:altLabel "User-Verzeichnis";
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "Ist ein Ordner und man muss über den Krümelpfad zu seinem User-Verzeichnis navigieren."@DE;
+  skos:notation "2.1";
+  skos:prefLabel "User-Verzeichnis";
+  skos:related <http://example.com/Benutzerbereich> .
+
+<http://example.com/Wurzelordner> a skos:Concept;
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "Diese Ordner befinden sich auf der obersten Ebene der Ordner und ist der Ausgangspunkt für die jeweilige Ordnerstruktur."@DE;
+  skos:notation "2.2";
+  skos:prefLabel "Wurzelordner";
+  skos:related <http://example.com/Ordnerstruktur> .
+
+<http://example.com/Wurzelordner+Users> a skos:Concept;
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition "Ist ein Wurzelordner, in dem alle Daten Ihres persönlichen Bereiches abgelegt werden."@DE;
+  skos:notation "2.2.1";
+  skos:prefLabel "Wurzelordner Users";
+  skos:related <http://example.com/Pers%C3%B6nliche+Bereich> .
+
+<http://example.com/Wurzelordner+Media_Audio> a skos:Concept;
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition "Ist ein Wurzelordner, in dem Audio-Dateien, Audio-Dateien als Track auf einem Datenträger und Vertonte Vokabel abgelegt werden."@DE;
+  skos:notation "2.2.2";
+  skos:prefLabel "Wurzelordner Media_Audio" .
+
+<http://example.com/Wurzelordner+Media_Video> a skos:Concept;
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition "Ist ein Wurzelordner, in dem Videodateien archiviert werden."@DE;
+  skos:notation "2.2.3";
+  skos:prefLabel "Wurzelordner Media_Video" .
+
+<http://example.com/Wurzelordner+Papierkorb> a skos:Concept;
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition """Ist ein Wurzelordner und es enthält alle Assets, die von einem Nutzer mit den Status „Ja\" im Feld „Datensatz löschen\" markiert wurden.
+"""@DE;
+  skos:notation "2.2.4";
+  skos:prefLabel "Wurzelordner Papierkorb" .
+
+<http://example.com/Wurzelordner+Begleitateien> a skos:Concept;
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition "Ist ein Wurzelordner und es enthält die Dateien, die für die Erstellung von Werbemitteln, Katalogen oder für die Präsentation eines Cornelsen-Produktes im Internet und im Webshop benötigt werden."@DE;
+  skos:notation "2.2.5";
+  skos:prefLabel "Wurzelordner Begleitateien" .
+
+<http://example.com/Wurzelordner+Interaktiv> a skos:Concept;
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition """Ist ein Wurzelordner und es enthält Interaktive Übungen, Übungssequenzen und Animationen. Außerdem sind hier eine ganze Reihe „Medienelemente\" (MEL) aus alten, mittlerweile nicht mehr vorhandenen Produktionsumgebungen archiviert.
+"""@DE;
+  skos:notation "2.2.6";
+  skos:prefLabel "Wurzelordner Interaktiv" .
+
+<http://example.com/Wurzelordner+Produkte_UMA> a skos:Concept;
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition "Ist ein Wurzelordner und es enthält (anders als sein Name vermuten lässt) nicht nur Datenpakete für die digitalen Produkte „Unterrichtsmanager (UMa)\", sondern auch „Begleitmaterialien auf USB-Stick\""@DE;
+  skos:notation "2.2.7";
+  skos:prefLabel "Wurzelordner Produkte_UMA" .
+
+<http://example.com/Wurzrlordner+ISO_Archiv> a skos:Concept;
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition """Ist ein Wurzelordner und es enthält ISO-Dateien von CD-ROMs und DVDs abgelegt. ISO-Dateien sind Speicherabbild des Dateisystems einer CD oder DVD enthält und dienen als Quelldatei zur Vervielfältigung.
+"""@DE;
+  skos:notation "2.2.8";
+  skos:prefLabel "Wurzrlordner ISO_Archiv" .
+
+<http://example.com/Wurzelordner+Archiv_Titelneutral> a skos:Concept;
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition """Ist ein Wurzelordner und es ist für alle Assets gedacht, die keinen Bezug zu einem konkreten Titel haben, z. B. Kopiervorlagen, AKDs, Assets von Werbung/Kreation, Dokumentationen.
+"""@DE;
+  skos:notation "2.2.9";
+  skos:prefLabel "Wurzelordner Archiv_Titelneutral" .
+
+<http://example.com/Wurzelordner+Agenturbilder_Original> a skos:Concept;
+  skos:altLabel "Picturemaxx-Medien";
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition "Ist ein Wurzelordner und es enthält alle Bilder, die Sie aus Picturemaxx importieren oder von anderen Agenturen als Original-Agenturbild (d. h. unverändert) erhalten."@DE;
+  skos:notation "2.2.10";
+  skos:prefLabel "Wurzelordner Agenturbilder_Original" .
+
+<http://example.com/Wurzelordner+Freie_Bildgeber> a skos:Concept;
+  skos:altLabel "sonst. Medienlieferanten";
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition "Ist ein Wurzelordner und es enthält Firmen- und Pressebilder, (zusammengestellte) Grafiken, Zeichnungen, Privatbildgeber, Fotografen ohne Agentur, Collagen/Montagen, Scans, Filmstills, Screenshots etc."@DE;
+  skos:notation "2.2.11";
+  skos:prefLabel "Wurzelordner Freie_Bildgeber" .
+
+<http://example.com/Wurzelordner+Archiv_CV> a skos:Concept;
+  skos:altLabel "Ablagesystem";
+  skos:broader <http://example.com/Wurzelordner>;
+  skos:definition "Ist ein Wurzelordner und es enthält alle Daten zu einzelnen Produkten mit einer ISBN, also Manuskripte, Fotos und Illustrationen, InDesign-Dateien und PDFs."@DE;
+  skos:notation "2.2.12";
+  skos:prefLabel "Wurzelordner Archiv_CV" .
+
+<http://example.com/Titelordner> a skos:Concept;
+  skos:altLabel "ISBN-Titelordner";
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "Ist der letzter Ordner (bzw. Zahl der ISBN) in der Ordnerstruktur."@DE;
+  skos:notation "2.3";
+  skos:prefLabel "Titelordner";
+  skos:related <http://example.com/Ordnerstruktur> .
+
+<http://example.com/Unterordner> a skos:Concept;
+  skos:broader <http://example.com/Titelordner>;
+  skos:definition "Verzeichnis, welches sich in einem anderen Verzeichnis befindet; Verzeichnis einer tieferen Ebene"@DE;
+  skos:notation "2.3.1";
+  skos:prefLabel "Unterordner";
+  skos:related <http://example.com/Ordnerstruktur> .
+
+<http://example.com/Collection> a skos:Concept;
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "Ist ein Unterordner im Nutzerverzeichnis."@DE;
+  skos:notation "2.4";
+  skos:prefLabel "Collection" .
+
+<http://example.com/Zielordner> a skos:Concept;
+  skos:altLabel "Ablageort";
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "Zeilverzeichnis in denen Assets hinterlegt werden"@DE;
+  skos:notation "2.5";
+  skos:prefLabel "Zielordner" .
+
+<http://example.com/Begleitdateien-Archiv> a skos:Concept;
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "Ist im Wurzelordner-Pfad Archiv_CV der dazugehörige Titelordner (letzte Ordner) zu einem Titel, in dem die Begleitdaten abgelegt sind."@DE;
+  skos:notation "2.6";
+  skos:prefLabel "Begleitdateien-Archiv" .
+
+<http://example.com/PrintPDF-Ordner> a skos:Concept;
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "PrintPDF-Ordner enthält die Daten für die Imprimatur."@DE;
+  skos:notation "2.7";
+  skos:prefLabel "PrintPDF-Ordner" .
+
+<http://example.com/Imprimatur-Ordner> a skos:Concept;
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "Beinhaltet Daten die final überprüft werden müssen und für den Druck freigegeben werden."@DE;
+  skos:notation "2.8";
+  skos:prefLabel "Imprimatur-Ordner" .
+
+<http://example.com/Hotfolder-Ordner> a skos:Concept;
+  skos:altLabel "Hotfolder";
+  skos:broader <http://example.com/Ordner>;
+  skos:definition """Ist ein Datei-Ordner, der vom
+System überwacht wird. Wenn Daten in diesen überwachten Ordner importieren werden, werden die Daten automatisch vom System weiterverarbeitet."""@DE;
+  skos:notation "2.9";
+  skos:prefLabel "Hotfolder-Ordner" .
+
+<http://example.com/Ablage-Ordner> a skos:Concept;
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "Beschreibt den Ordner in denen ein Asset zu finden ist."@DE;
+  skos:notation "2.10";
+  skos:prefLabel "Ablage-Ordner" .
+
+<http://example.com/privater+Ordner> a skos:Concept;
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "Ein Ordner in denen der Nutzer seine persönliche Kollektionen anlegen und  seine Assets für sich persönlich verwalten kann."@DE;
+  skos:notation "2.11";
+  skos:prefLabel "privater Ordner" .
+
+<http://example.com/Checkouts-Ordner> a skos:Concept;
+  skos:broader <http://example.com/Ordner>;
+  skos:definition "Ist ein lokaler Ordner in dem Assets während des Ausscheckens lokal zwischengespeichert werden."@DE;
+  skos:notation "2.12";
+  skos:prefLabel "Checkouts-Ordner" .
+
+<http://example.com/Bereich> a skos:Concept;
+  skos:definition "Ist der Oberbegriff für alle mit dem Elvis-System in Kontakt stehenden Bereiche bzw. Arbeitsbereiche."@DE;
+  skos:notation "3";
+  skos:prefLabel "Bereich" .
+
+<http://example.com/Pers%C3%B6nlicher+Bereich> a skos:Concept;
+  skos:altLabel "Nutzerbereich", "User Zone";
+  skos:broader <http://example.com/Bereich>;
+  skos:definition "Ein Bereich in denen jeder User seine eigenen Verzeichnise, Kollektionen ect. hinterlegt sind."@DE;
+  skos:notation "3.1";
+  skos:prefLabel "Persönlicher Bereich";
+  skos:related <http://example.com/Benutzeroberfl%C3%A4che> .
+
+<http://example.com/Arbeitsbereich> a skos:Concept;
+  skos:broader <http://example.com/Bereich>;
+  skos:definition "Ist der Ort an dem die Daten verarbeitet/bearbeitet werden von Nutzer."@DE;
+  skos:notation "3.2";
+  skos:prefLabel "Arbeitsbereich" .
+
+<http://example.com/Zentraler+Bereich> a skos:Concept;
+  skos:broader <http://example.com/Bereich>;
+  skos:definition "Ist der Bereich (Verzeichnis) in denen die Assts/Daten abgelegt werden, wenn keine direkte zuweisung erfolgt. Im Allg. das Hauptverzeichnis."@DE;
+  skos:notation "3.3";
+  skos:prefLabel "Zentraler Bereich" .
+
+<http://example.com/Ablagebereich> a skos:Concept;
+  skos:broader <http://example.com/Bereich>;
+  skos:definition "Ist der Bereich (Verzeichnis) in denen die Assts/Daten abgelegt werden."@DE;
+  skos:notation "3.4";
+  skos:prefLabel "Ablagebereich" .
+
+<http://example.com/Benutzeroberfl%C3%A4che> a skos:Concept;
+  skos:definition "Auf dem Bildschirm eines Computers sichtbare Darstellung eines Programms"@DE;
+  skos:notation "4";
+  skos:prefLabel "Benutzeroberfläche" .
+
+<http://example.com/Ordnerstruktur> a skos:Concept;
+  skos:altLabel "Verzeichnisstruktur";
+  skos:broader <http://example.com/Benutzeroberfl%C3%A4che>;
+  skos:definition "Ist die hierarchische Gestalt der gesamten Ordnersystems."@DE;
+  skos:notation "4.1";
+  skos:prefLabel "Ordnerstruktur" .
+
+<http://example.com/Startseite> a skos:Concept;
+  skos:broader <http://example.com/Benutzeroberfl%C3%A4che>;
+  skos:definition "Erste Seite, auf die man kommt, wenn man Elvis öffnet."@DE;
+  skos:notation "4.2";
+  skos:prefLabel "Startseite" .
+
+<http://example.com/zentrales+Cockpit> a skos:Concept;
+  skos:altLabel "User Interface";
+  skos:broader <http://example.com/Benutzeroberfl%C3%A4che>;
+  skos:definition "Ist die zentrale Steuereinheit in der Benutzeroberfläche von Elvis."@DE;
+  skos:notation "4.3";
+  skos:prefLabel "zentrales Cockpit" .
+
+<http://example.com/Dialogfenster> a skos:Concept;
+  skos:broader <http://example.com/Benutzeroberfl%C3%A4che>;
+  skos:definition "Ein Fenster, das als Teil einer grafischen Benutzeroberfläche über dem Anwendungsfenster erscheint, um eine klar abgegrenzte Aufgabe zu erfüllen"@DE;
+  skos:notation "4.4";
+  skos:prefLabel "Dialogfenster" .
+
+<http://example.com/Dialogfeld> a skos:Concept;
+  skos:broader <http://example.com/Dialogfenster>;
+  skos:definition "Dialogfeld werden eingeblendet, um Eingaben vom Benutzer einzuholen"@DE;
+  skos:notation "4.4.1";
+  skos:prefLabel "Dialogfeld" .
+
+<http://example.com/Pop-Up-Fenster> a skos:Concept;
+  skos:broader <http://example.com/Dialogfenster>;
+  skos:definition "In der Regel werden Pop-ups angezeigt, um zusätzliche Inhalte anzuzeigen oder eine bestimmte Interaktion abzufragen."@DE;
+  skos:notation "4.4.2";
+  skos:prefLabel "Pop-Up-Fenster" .
+
+<http://example.com/Import-Dialogfeld> a skos:Concept;
+  skos:broader <http://example.com/Dialogfenster>;
+  skos:definition "EIn Fenster womit  Bilder per „Drag & Drop\" aus dem Dateimanager in das Importfenster gezogen werden."@DE;
+  skos:notation "4.4.3";
+  skos:prefLabel "Import-Dialogfeld" .
+
+<http://example.com/Dialogfeld+%22Dateien+verschieben+in...%22> a skos:Concept;
+  skos:broader <http://example.com/Dialogfenster>;
+  skos:definition "Ist ein Pop-Up Fenster das erscheint, um von Benutzer zu erfahren ob die Datei verschoben werden soll. "@DE;
+  skos:notation "4.4.4";
+  skos:prefLabel "Dialogfeld \"Dateien verschieben in...\"" .
+
+<http://example.com/Dialogfeld+%22als+neue+Version+speichern%22> a skos:Concept;
+  skos:broader <http://example.com/Dialogfenster>;
+  skos:definition "Ist ein Pop-Up Fenster das erscheint, um von Benutzer zu erfahren ob die Version gespeichert werden soll. "@DE;
+  skos:notation "4.4.5";
+  skos:prefLabel "Dialogfeld \"als neue Version speichern\"" .
+
+<http://example.com/Rechte-Plugin> a skos:Concept;
+  skos:broader <http://example.com/Dialogfenster>;
+  skos:definition """Anzeige aller Assets, die in der Kollektion enthalten sind, ausgelesen und aufgelistet.
+"""@DE;
+  skos:notation "4.4.6";
+  skos:prefLabel "Rechte-Plugin";
+  skos:related <http://example.com/Rechtliche+Metadaten> .
+
+<http://example.com/Panel> a skos:Concept;
+  skos:broader <http://example.com/Benutzeroberfl%C3%A4che>;
+  skos:definition "Ist eine Ansicht mit weiteren Informationen"@DE;
+  skos:notation "4.5";
+  skos:prefLabel "Panel" .
+
+<http://example.com/Kollektion-Panel> a skos:Concept;
+  skos:altLabel "Verknüpfungs-Panel";
+  skos:broader <http://example.com/Panel>;
+  skos:definition "Ein Panel, in denen die Kollektion aufgezeigt werden und den darin enthaltenen Assets"@DE;
+  skos:notation "4.5.1";
+  skos:prefLabel "Kollektion-Panel" .
+
+<http://example.com/Versions-Panel> a skos:Concept;
+  skos:broader <http://example.com/Panel>;
+  skos:definition "Ein Panel, in denen die Versionen eines Assts aufgezeigt werden."@DE;
+  skos:notation "4.5.2";
+  skos:prefLabel "Versions-Panel" .
+
+<http://example.com/Verlaufs-Panel> a skos:Concept;
+  skos:altLabel "Asset-Historie", "Aufzeichnung aller Aktionen", "Historie", "Verlauf",
+    "Vollständer Verlauf";
+  skos:broader <http://example.com/Panel>;
+  skos:definition "Ist eine Aufzeichnung aller Aktionen, die mit dem Asset in der Vergangenheit durchgeführt wurden."@DE;
+  skos:notation "4.5.3";
+  skos:prefLabel "Verlaufs-Panel";
+  skos:related <http://example.com/Version+wiederherstellen> .
+
+<http://example.com/Metadaten-Panel> a skos:Concept;
+  skos:altLabel "Metadatenansicht";
+  skos:broader <http://example.com/Panel>;
+  skos:definition "Ein Panel, in denen die Metadaten zu sehen sind."@DE;
+  skos:notation "4.5.4";
+  skos:prefLabel "Metadaten-Panel" .
+
+<http://example.com/Panel+%22Verkn%C3%BCpfte+Objekte%22> a skos:Concept;
+  skos:broader <http://example.com/Panel>;
+  skos:definition "Ein Panel, in denen via Drag&Drop Assts Verlinkt werden."@DE;
+  skos:notation "4.5.5";
+  skos:prefLabel "Panel \"Verknüpfte Objekte\"";
+  skos:related <http://example.com/Asset+referenzieren> .
+
+<http://example.com/CST-Panel> a skos:Concept;
+  skos:broader <http://example.com/Panel>;
+  skos:definition "Ist eine Panelserweiterung in dem  Elvis InDesign-Client."@DE;
+  skos:notation "4.5.6";
+  skos:prefLabel "CST-Panel" .
+
+<http://example.com/Registerkarte> a skos:Concept;
+  skos:broader <http://example.com/Benutzeroberfl%C3%A4che>;
+  skos:definition "Ist ein Steuerelement einer grafischen Benutzeroberfläche, und Listet bzw. Visualisiert Inahlte."@DE;
+  skos:notation "4.6";
+  skos:prefLabel "Registerkarte" .
+
+<http://example.com/Registerkarte+%22Historie%22> a skos:Concept;
+  skos:broader <http://example.com/Registerkarte>;
+  skos:definition "Ist eine Registerkarte, in der weitere Informationen zur Asset-Historie hinterlegt sind."@DE;
+  skos:notation "4.6.1";
+  skos:prefLabel "Registerkarte \"Historie\"" .
+
+<http://example.com/Asset-Status> a skos:Concept;
+  skos:broader <http://example.com/Registerkarte+%22Historie%22>;
+  skos:notation "4.6.1.1";
+  skos:prefLabel "Asset-Status" .
+
+<http://example.com/Eingecheckt> a skos:Concept;
+  skos:broader <http://example.com/Asset-Status>;
+  skos:notation "4.6.1.1.1";
+  skos:prefLabel "Eingecheckt" .
+
+<http://example.com/Ausgecheckt> a skos:Concept;
+  skos:broader <http://example.com/Asset-Status>;
+  skos:notation "4.6.1.1.2";
+  skos:prefLabel "Ausgecheckt" .
+
+<http://example.com/Heruntergeladen> a skos:Concept;
+  skos:altLabel "runter geladen";
+  skos:broader <http://example.com/Asset-Status>;
+  skos:notation "4.6.1.1.3";
+  skos:prefLabel "Heruntergeladen" .
+
+<http://example.com/Verschoben> a skos:Concept;
+  skos:broader <http://example.com/Asset-Status>;
+  skos:notation "4.6.1.1.4";
+  skos:prefLabel "Verschoben" .
+
+<http://example.com/Registerkarte+%22Ausgecheckt%22> a skos:Concept;
+  skos:broader <http://example.com/Registerkarte>;
+  skos:definition "Ist eine Auflistung aller Ausgecheckten Daten (z.B. Asset)"@DE;
+  skos:notation "4.6.2";
+  skos:prefLabel "Registerkarte \"Ausgecheckt\"" .
+
+<http://example.com/Registerkarte+%22Bereitstellen%22> a skos:Concept;
+  skos:broader <http://example.com/Registerkarte>;
+  skos:definition "Ist eine Auflistung aller Bereitgestellten Daten (z.B. Asset)"@DE;
+  skos:notation "4.6.3";
+  skos:prefLabel "Registerkarte \"Bereitstellen\"" .
+
+<http://example.com/Registerkarte+%22Bereitgestellte+Links%22> a skos:Concept;
+  skos:broader <http://example.com/Registerkarte>;
+  skos:definition "Ist eine Auflistung aller Bereitgestellten Links Daten (z.B. Asset)"@DE;
+  skos:notation "4.6.4";
+  skos:prefLabel "Registerkarte \"Bereitgestellte Links\"" .
+
+<http://example.com/Kontextmen%C3%BC> a skos:Concept;
+  skos:altLabel "Kontext-Menü-Eintrag";
+  skos:broader <http://example.com/Benutzeroberfl%C3%A4che>;
+  skos:definition "Ist eine Aktion in dem Köntexmenü, die zum Assets-Kontex führt."@DE;
+  skos:notation "4.7";
+  skos:prefLabel "Kontextmenü" .
+
+<http://example.com/Kontextmen%C3%BCpunkt+zu+Assets+> a skos:Concept;
+  skos:broader <http://example.com/Kontextmen%C3%BC>;
+  skos:notation "4.7.1";
+  skos:prefLabel "Kontextmenüpunkt zu Assets " .
+
+<http://example.com/Kontextmen%C3%BC+zu+Kollektionen> a skos:Concept;
+  skos:broader <http://example.com/Kontextmen%C3%BC>;
+  skos:definition "Ist eine Aktion in dem Köntexmenü, die zum Kollektionen-Kontex führt."@DE;
+  skos:notation "4.7.2";
+  skos:prefLabel "Kontextmenü zu Kollektionen" .
+
+<http://example.com/Kontextmen%C3%BC+zu+Version> a skos:Concept;
+  skos:broader <http://example.com/Kontextmen%C3%BC>;
+  skos:definition "Ist eine Aktion in dem Köntexmenü, die zum Version-Kontex führt."@DE;
+  skos:notation "4.7.3";
+  skos:prefLabel "Kontextmenü zu Version" .
+
+<http://example.com/Kontextmen%C3%BC+zu+Ordner+%E2%80%9ECollections%22.> a skos:Concept;
+  skos:broader <http://example.com/Kontextmen%C3%BC>;
+  skos:definition "Ist eine Aktion in dem Köntexmenü, die zum Ordner „Collections\"-Kontex führt."@DE;
+  skos:notation "4.7.4";
+  skos:prefLabel "Kontextmenü zu Ordner „Collections\"." .
+
+<http://example.com/Person> a skos:Concept;
+  skos:definition "Ist der Oberbegriff für alle mit dem Elvis-System in Kontakt stehenden natürlichen und juristischen Personen."@DE;
+  skos:notation "5";
+  skos:prefLabel "Person" .
+
+<http://example.com/Ansprechpartner> a skos:Concept;
+  skos:broader <http://example.com/Person>;
+  skos:definition "Sind Person, die man ansprechen kann, um eine kompetente Auskunft, relevante Informationen, Kontaktdaten oder ähnliches zu erhalten."@DE;
+  skos:notation "5.1";
+  skos:prefLabel "Ansprechpartner" .
+
+<http://example.com/Benutzer> a skos:Concept;
+  skos:altLabel "Teilnehmer", "User";
+  skos:broader <http://example.com/Person>;
+  skos:definition "Benutzer ist eine spezielle Person, die Zugriff auf das Elvis-System hat bzw. mit Assets arbeitet."@DE;
+  skos:notation "5.2";
+  skos:prefLabel "Benutzer" .
+
+<http://example.com/Externe+Nutzer> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Externe Nutzer ist ein Benutzer des Elvis-Systems, der nicht Mitarbeiter der Cornelsen Verlags GmbH ist."@DE;
+  skos:notation "5.2.1";
+  skos:prefLabel "Externe Nutzer" .
+
+<http://example.com/Interne+Nutzer> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Interner Nutzer ist ein Benutzer des Elvis-Systems, der Mitarbeiter der Cornelsen Verlags GmbH ist."@DE;
+  skos:notation "5.2.2";
+  skos:prefLabel "Interne Nutzer" .
+
+<http://example.com/Mitarbeiter+von+Publishing+Operations> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>, <http://example.com/Mitarbeiter>;
+  skos:definition "Sind Mitarbeiter die für die veröffentlichung von Werken zuständig."@DE;
+  skos:notation "5.2.12.2", "5.2.3";
+  skos:prefLabel "Mitarbeiter von Publishing Operations" .
+
+<http://example.com/PU-COM> a skos:Concept;
+  skos:broader <http://example.com/Mitarbeiter+von+Publishing+Operations>;
+  skos:notation "5.2.3.1";
+  skos:prefLabel "PU-COM" .
+
+<http://example.com/Publishing+Operation> a skos:Concept;
+  skos:altLabel "Verlagswesen";
+  skos:broader <http://example.com/Ansprechpartner>;
+  skos:definition "Beschreibt den Vorgang, bei dem ein Werk mit Zustimmung des Urhebers der Öffentlichkeit zugänglich gemacht wird."@DE;
+  skos:notation "5.1.1";
+  skos:prefLabel "Publishing Operation" .
+
+<http://example.com/Redakteur> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Redakteur ist ein spezieller Benutzer des Elvis-Systems, mit redaktionellen Benutzerrechten."@DE;
+  skos:notation "5.2.4";
+  skos:prefLabel "Redakteur" .
+
+<http://example.com/Dienstleister> a skos:Concept;
+  skos:altLabel "Dienstleister";
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Sind Personen die eine Dienstleistung erbringen."@DE;
+  skos:notation "5.2.5";
+  skos:prefLabel "Dienstleister" .
+
+<http://example.com/Vorstufendienstleister> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Ein Dienstleister, der die Texte und Abbildungen bzw. Assets zu Druckvorlagen zusammenzuführt. Dabei wird das Material in druckbare Daten umgesetzt."@DE;
+  skos:notation "5.2.6";
+  skos:prefLabel "Vorstufendienstleister" .
+
+<http://example.com/Bild-Dienstleister> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Sind Dienstleister die Fotografien und Bildpräsentation nach spezifischer Order/Vertrag zur verfügung stellen."@DE;
+  skos:notation "5.2.7";
+  skos:prefLabel "Bild-Dienstleister" .
+
+<http://example.com/Hersteller> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Sind Personen, Firmen oder Institutionen die etwas Herstellen. Bspw. Assets oder Programme"@DE;
+  skos:notation "5.2.8";
+  skos:prefLabel "Hersteller" .
+
+<http://example.com/Agentur> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Agentur stellt Cornelsen Originalbilder zur Verfügung"@DE;
+  skos:notation "5.2.9";
+  skos:prefLabel "Agentur" .
+
+<http://example.com/Anbieter> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Sind Personen, Firmen oder Institutionen die etwas anbietet."@DE;
+  skos:notation "5.2.10";
+  skos:prefLabel "Anbieter" .
+
+<http://example.com/Bildgeber> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Bildgeber stellt Cornelsen Originalbilder zur Verfügung"@DE;
+  skos:notation "5.2.11";
+  skos:prefLabel "Bildgeber" .
+
+<http://example.com/Mitarbeiter> a skos:Concept;
+  skos:broader <http://example.com/Benutzer>;
+  skos:definition "Mitarbeiter ist irgendjemand, der das Bearbeitungsrecht eines Assets im Elvis hat"@DE;
+  skos:notation "5.2.12";
+  skos:prefLabel "Mitarbeiter" .
+
+<http://example.com/Mitarbeiter+Medienbeschaffung> a skos:Concept;
+  skos:broader <http://example.com/Mitarbeiter>;
+  skos:notation "5.2.12.1";
+  skos:prefLabel "Mitarbeiter Medienbeschaffung" .
+
+<http://example.com/Workflow> a skos:Concept;
+  skos:definition "Workflows sind automatisierte Aktionen, die verschiedene Arbeitsschritte bei der Verwaltung von Assets automatisieren und Ihnen so die Arbeit erleichtern"@DE;
+  skos:notation "6";
+  skos:prefLabel "Workflow" .
+
+<http://example.com/Hotfolder-Workflow> a skos:Concept;
+  skos:broader <http://example.com/Workflow>;
+  skos:definition "Für den Import von Assets, die in CSV-Produkten verwendet werden sollen, stehen sogenannte Hotfolder zur Verfügung. Das sind Datei-Ordner, die vom System überwacht werden"@DE;
+  skos:notation "6.1";
+  skos:prefLabel "Hotfolder-Workflow" .
+
+<http://example.com/Picturemaxx-Hotfolder> a skos:Concept;
+  skos:broader <http://example.com/Hotfolder-Workflow>;
+  skos:definition "Picturemaxx-Hotfolder ermöglicht die über Picturemaxx heruntergeladenen Assets manuell zu importieren"@DE;
+  skos:notation "6.1.1";
+  skos:prefLabel "Picturemaxx-Hotfolder" .
+
+<http://example.com/FreieBildgeber-Hotfolder> a skos:Concept;
+  skos:broader <http://example.com/Hotfolder-Workflow>;
+  skos:definition "Die Freien Bildgeber Hotfolder auf Laufwerk W und im Nutzerverzeichnis in Elvis wurden zu Gunsten des neuen Upload-Portals abgeschafft."@DE;
+  skos:notation "6.1.2";
+  skos:prefLabel "FreieBildgeber-Hotfolder" .
+
+<http://example.com/Bildoptimierungs-Hotfolder> a skos:Concept;
+  skos:broader <http://example.com/Hotfolder-Workflow>;
+  skos:definition "Bildoptimierungs-Hotfolder ermöglicht, dass große Datenmengen nach der Bildbearbeitung/ Bildoptiemierung durch Dritte wieder in Elvis gebracht werden."@DE;
+  skos:notation "6.1.3";
+  skos:prefLabel "Bildoptimierungs-Hotfolder" .
+
+<http://example.com/Asset-Workflow> a skos:Concept;
+  skos:broader <http://example.com/Workflow>;
+  skos:definition "Asset-Workflows sind automatische Aktionen an einzelnen Assets. Die Workflows werden angesteuert durch das Setzen bestimmter Metadaten am Asset."@DE;
+  skos:notation "6.2";
+  skos:prefLabel "Asset-Workflow" .
+
+<http://example.com/Cover-Varianten_erstellen> a skos:Concept;
+  skos:broader <http://example.com/Asset-Workflow>;
+  skos:definition """Die Cover-Varianten (-Ableitungen) sind Pixelbilder der Umschlagseiten, die als Vorschau in Werbematerialien und in Planungssystemen (z. B. SAP)
+dienen."""@DE;
+  skos:notation "6.2.1";
+  skos:prefLabel "Cover-Varianten_erstellen" .
+
+<http://example.com/Imprimatur> a skos:Concept;
+  skos:broader <http://example.com/Asset-Workflow>;
+  skos:definition """Die im Rahmen des Realisierungsprozesses entstandenen PDFs für die Druckerei befinden sich im Titelordner und dort im Unterordner „PrintPDF\". Diese
+Daten müssen final überprüft und für den Druck freigegeben werden (Imprimatur – lat. für „Es ist zu drucken!\"). Die so kontrollierten und final
+freigegebenen Daten müssen im Unterordner „Imprimatur\" des Titelordners abgelegt sein. Das Verschieben der Daten aus dem „PrintPDF\"-Ordner in den
+„Imprimatur\"-Ordner geschieht automatisch durch einen Workflow."""@DE;
+  skos:notation "6.2.2";
+  skos:prefLabel "Imprimatur" .
+
+<http://example.com/Begleitdaten+kopieren> a skos:Concept;
+  skos:broader <http://example.com/Asset-Workflow>;
+  skos:definition """Werbematerialien können aus allen möglichen Assets in Elvis erzeugt werden, sofern diese in einem Titelordner eines Produktes im „Archiv_CV\" liegen,
+also einem Produkt zugeordnet sind."""@DE;
+  skos:notation "6.2.3";
+  skos:prefLabel "Begleitdaten kopieren" .
+
+<http://example.com/Screenshots+erzeugen> a skos:Concept;
+  skos:broader <http://example.com/Asset-Workflow>;
+  skos:definition """Screenshots werden von Software-Produkten angefertigt, um sie auf der jeweiligen Produktseite im Webshop zur Ansicht bzw. zum kostenlosen Download
+anzubieten und sie in Katalogen zu verwenden. Sie werden auf Wunsch der Redaktion aus (nicht standardisiert) erstellten Grafiken erzeugt."""@DE;
+  skos:notation "6.2.4";
+  skos:prefLabel "Screenshots erzeugen" .
+
+<http://example.com/Daten> a skos:Concept;
+  skos:definition "Daten sind Angaben, Werte oder formulierbare Befunde, die durch Messung, Beobachtung u. a. gewonnen wurden. "@DE;
+  skos:notation "7";
+  skos:prefLabel "Daten" .
+
+<http://example.com/Datenelement> a skos:Concept;
+  skos:broader <http://example.com/Daten>;
+  skos:definition "Ist eine atomare Dateneinheit und beschreiben lediglich, welche Datenfelder in den konkreten Datensätzen auftreten können, was sie bedeuten und welche formalen Bedingungen für sie gelten."@DE;
+  skos:notation "7.1";
+  skos:prefLabel "Datenelement" .
+
+<http://example.com/Daten-Bestandteil> a skos:Concept;
+  skos:broader <http://example.com/Datenelement>;
+  skos:definition "Datenbestandteile sind Datenelemente, die eine Liste darstellen, welche Datum-Bestandteile und Alternativen Bezeichnungen im Elvis-System unterstützt werden"@DE;
+  skos:notation "7.1.1";
+  skos:prefLabel "Daten-Bestandteil" .
+
+<http://example.com/Datenmuster> a skos:Concept;
+  skos:broader <http://example.com/Datenelement>;
+  skos:definition "Datenmuster sind Datenelemente, die Listen enthalten, welche Datenmuster durch das Elvis-System unterstützt werden"@DE;
+  skos:notation "7.1.2";
+  skos:prefLabel "Datenmuster" .
+
+<http://example.com/Datenpaket> a skos:Concept;
+  skos:altLabel "Paket";
+  skos:broader <http://example.com/Datenelement>;
+  skos:definition "Eine Sammlung an Daten (bspw. Assts) in einem Paket vereint, die Versendet bzw. erhalten werden."@DE;
+  skos:notation "7.1.3";
+  skos:prefLabel "Datenpaket" .
+
+<http://example.com/Datensatz> a skos:Concept;
+  skos:broader <http://example.com/Datenelement>;
+  skos:definition "Eine Sammlung an Informellen Daten über ein Asset."@DE;
+  skos:notation "7.1.4";
+  skos:prefLabel "Datensatz" .
+
+<http://example.com/Zugangsdaten> a skos:Concept;
+  skos:altLabel "access data";
+  skos:broader <http://example.com/Daten>;
+  skos:definition "Sind Daten wie Passwort und Benutzername, die die Nutzung des Elvis-Systems ermöglichen."@DE;
+  skos:notation "7.2";
+  skos:prefLabel "Zugangsdaten" .
+
+<http://example.com/Quelldatei> a skos:Concept;
+  skos:broader <http://example.com/Daten>;
+  skos:definition "Sind Dateien aus der eingefügte oder angeforderte Daten stammen und/oder zu der eine logische Verknüpfung existiert."@DE;
+  skos:notation "7.3";
+  skos:prefLabel "Quelldatei" .
+
+<http://example.com/Speicherabbild> a skos:Concept;
+  skos:broader <http://example.com/Daten>;
+  skos:definition "Ist eine spezielle ISO-Datei."@DE;
+  skos:notation "7.4";
+  skos:prefLabel "Speicherabbild" .
+
+<http://example.com/Metadaten> a skos:Concept;
+  skos:altLabel "Metadatei";
+  skos:broader <http://example.com/Daten>;
+  skos:definition "Metadaten sind Daten, die beschreibende Informationen zu einem Asset enthalten. Sie werden für Suchanfragen genutzt und befinden sich im Elvis-System im rechten Metadaten-Panel"@DE;
+  skos:notation "7.5";
+  skos:prefLabel "Metadaten" .
+
+<http://example.com/Begleitdatei> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition "Anstoßen der Begleitdatenerstellung über einen Asset-Workflow."@DE;
+  skos:notation "7.5.1";
+  skos:prefLabel "Begleitdatei" .
+
+<http://example.com/Bezugsdatei> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition "Dateien, die sich auf andere Dateien im System beziehen."@DE;
+  skos:notation "7.5.2";
+  skos:prefLabel "Bezugsdatei" .
+
+<http://example.com/Verkn%C3%BCpfung+erstellt> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition """Wer das Asset  mit einem anderen Asset verknüpft hat und wann Details des Vorgangs.
+"""@DE;
+  skos:notation "7.5.3";
+  skos:prefLabel "Verknüpfung erstellt" .
+
+<http://example.com/Variation+erstellt> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition "Andere Variante eines Assets"@DE;
+  skos:notation "7.5.4";
+  skos:prefLabel "Variation erstellt" .
+
+<http://example.com/Detailinformationen> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition "Ist ein Metadatum mit Informationen über Details von Assets."@DE;
+  skos:notation "7.5.5";
+  skos:prefLabel "Detailinformationen" .
+
+<http://example.com/Erstellt> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition "Datum der Erstellung des Assets/Ordner"@DE;
+  skos:notation "7.5.6";
+  skos:prefLabel "Erstellt" .
+
+<http://example.com/Vorschau+angesehen> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition "Ein Protokollaufzeichnung, das Protokuliert wer sich eine Vorschau des Assets in Elvis angesehen hat. "@DE;
+  skos:notation "7.5.7";
+  skos:prefLabel "Vorschau angesehen" .
+
+<http://example.com/Auschecken+r%C3%BCckg%C3%A4ngig+gemacht> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition "Ist eine Funktion, wenn Sie keine Änderung vorgenommen haben oder wenn Sie irrtümlich etwas ausgecheckt haben. Assts werden regulär über Nacht wieder ins System gebracht und d. h., die Dateien in Elvis haben nicht den neuesten Stand!"@DE;
+  skos:notation "7.5.8";
+  skos:prefLabel "Auschecken rückgängig gemacht" .
+
+<http://example.com/Metadatengruppe> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition "Ist eine Zusammenfassung von einzelnen Metadaten zu einer thematisch gemeinsamen Gruppe von Metadaten. "@DE;
+  skos:notation "7.5.9";
+  skos:prefLabel "Metadatengruppe";
+  skos:related <http://example.com/Technische+Metadaten> .
+
+<http://example.com/Datei> a skos:Concept;
+  skos:altLabel "Gruppen-Datei";
+  skos:broader <http://example.com/Metadatengruppe>;
+  skos:notation "7.5.9.1";
+  skos:prefLabel "Datei";
+  skos:related <http://example.com/Technische+Metadaten> .
+
+<http://example.com/Bildgr%C3%B6%C3%9Fen> a skos:Concept;
+  skos:altLabel "Gruppe-Bildgrößen";
+  skos:broader <http://example.com/Metadatengruppe>;
+  skos:notation "7.5.9.2";
+  skos:prefLabel "Bildgrößen";
+  skos:related <http://example.com/Technische+Metadaten> .
+
+<http://example.com/Audioinformationen> a skos:Concept;
+  skos:altLabel "Gruppe-Audioinformationen";
+  skos:broader <http://example.com/Metadatengruppe>;
+  skos:notation "7.5.9.3";
+  skos:prefLabel "Audioinformationen";
+  skos:related <http://example.com/Technische+Metadaten> .
+
+<http://example.com/System> a skos:Concept;
+  skos:altLabel "Gruppe-System";
+  skos:broader <http://example.com/Metadatengruppe>;
+  skos:notation "7.5.9.4";
+  skos:prefLabel "System";
+  skos:related <http://example.com/Technische+Metadaten%3B+Kollaborative+Metadaten> .
+
+<http://example.com/Allgemein> a skos:Concept;
+  skos:altLabel "Gruppe-Allgemein";
+  skos:broader <http://example.com/Metadatengruppe>;
+  skos:notation "7.5.9.5";
+  skos:prefLabel "Allgemein";
+  skos:related <http://example.com/Fachliche+Metadaten%3B+Kollaborative+Metadaten> .
+
+<http://example.com/Rechte> a skos:Concept;
+  skos:altLabel "Gruppe-Rechte";
+  skos:broader <http://example.com/Metadatengruppe>;
+  skos:notation "7.5.9.6";
+  skos:prefLabel "Rechte";
+  skos:related <http://example.com/Rechtliche+Metadaten> .
+
+<http://example.com/Ersteller> a skos:Concept;
+  skos:broader <http://example.com/Metadatengruppe>;
+  skos:notation "7.5.9.7";
+  skos:prefLabel "Ersteller" .
+
+<http://example.com/Switch> a skos:Concept;
+  skos:altLabel "Gruppe-Switch";
+  skos:broader <http://example.com/Metadatengruppe>;
+  skos:notation "7.5.9.8";
+  skos:prefLabel "Switch" .
+
+<http://example.com/Metadatenart> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition "Ein einzelnes Asset kann in Elvis über mehr als 200 verschiedene Metadaten verfügen. Bei Cornelsen unterscheiden wir prinzipiell drei verschiedene Metadatenarten. Die Unterscheidung ist hilfreich, da die einzelnen Metadaten von unterschiedlichen Bereichen bei Cornelsen beachtet bzw. verarbeitet werden müssen."@DE;
+  skos:notation "7.5.10";
+  skos:prefLabel "Metadatenart" .
+
+<http://example.com/Technische+Metadaten> a skos:Concept;
+  skos:broader <http://example.com/Metadatenart>;
+  skos:notation "7.5.10.1";
+  skos:prefLabel "Technische Metadaten" .
+
+<http://example.com/Fachliche+Metadaten> a skos:Concept;
+  skos:broader <http://example.com/Metadatenart>;
+  skos:notation "7.5.10.2";
+  skos:prefLabel "Fachliche Metadaten" .
+
+<http://example.com/Kollaborative+Metadaten> a skos:Concept;
+  skos:broader <http://example.com/Metadatenart>;
+  skos:notation "7.5.10.3";
+  skos:prefLabel "Kollaborative Metadaten" .
+
+<http://example.com/Rechtliche+Metadaten> a skos:Concept;
+  skos:broader <http://example.com/Metadatenart>;
+  skos:notation "7.5.10.4";
+  skos:prefLabel "Rechtliche Metadaten";
+  skos:related <http://example.com/Rechte-Plugin%3B+Kontextmen%C3%BC> .
+
+<http://example.com/Inhaltliche+Metadaten> a skos:Concept;
+  skos:broader <http://example.com/Metadatenart>;
+  skos:notation "7.5.10.5";
+  skos:prefLabel "Inhaltliche Metadaten" .
+
+<http://example.com/Metadatenfeld> a skos:Concept;
+  skos:broader <http://example.com/Metadaten>;
+  skos:definition "Ein Metadatenfeld ist ein Teil des Metadaten-Panels und kann je nach Berechtigung sichtbar sein für den Nutzer."@DE;
+  skos:notation "7.5.11";
+  skos:prefLabel "Metadatenfeld" .
+
+<http://example.com/Dateiname> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.1";
+  skos:prefLabel "Dateiname";
+  skos:related <http://example.com/Datei> .
+
+<http://example.com/Verzeichnis> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.2";
+  skos:prefLabel "Verzeichnis";
+  skos:related <http://example.com/Datei> .
+
+<http://example.com/Dateigr%C3%B6%C3%9Fe> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.3";
+  skos:prefLabel "Dateigröße";
+  skos:related <http://example.com/Datei> .
+
+<http://example.com/Datei+erstellt+am> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.4";
+  skos:prefLabel "Datei erstellt am";
+  skos:related <http://example.com/Datei> .
+
+<http://example.com/Gr%C3%B6%C3%9Fe+%28Pixel%29> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.5";
+  skos:prefLabel "Größe (Pixel)";
+  skos:related <http://example.com/Bildgr%C3%B6%C3%9Fen> .
+
+<http://example.com/Gr%C3%B6%C3%9Fe+%28Millimeter%29> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.6";
+  skos:prefLabel "Größe (Millimeter)";
+  skos:related <http://example.com/Bildgr%C3%B6%C3%9Fen> .
+
+<http://example.com/Aufl%C3%B6sung> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.7";
+  skos:prefLabel "Auflösung";
+  skos:related <http://example.com/Bildgr%C3%B6%C3%9Fen> .
+
+<http://example.com/Tags> a skos:Concept;
+  skos:altLabel "Schlüsselworte";
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.8";
+  skos:prefLabel "Tags";
+  skos:related <http://example.com/Allgemein> .
+
+<http://example.com/Beschreibung> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.9";
+  skos:prefLabel "Beschreibung";
+  skos:related <http://example.com/Allgemein%3B+Fachliche+Metadaten> .
+
+<http://example.com/Kategorie> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.10";
+  skos:prefLabel "Kategorie";
+  skos:related <http://example.com/Allgemein%3B+Fachliche+Metadaten> .
+
+<http://example.com/Quelle> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.11";
+  skos:prefLabel "Quelle";
+  skos:related <http://example.com/Allgemein%3B+Fachliche+Metadaten> .
+
+<http://example.com/URL> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.12";
+  skos:prefLabel "URL";
+  skos:related <http://example.com/Allgemein%3B+Fachliche+Metadaten> .
+
+<http://example.com/Bildtext> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.13";
+  skos:prefLabel "Bildtext";
+  skos:related <http://example.com/Allgemein%3B+Fachliche+Metadaten> .
+
+<http://example.com/Titel> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.14";
+  skos:prefLabel "Titel";
+  skos:related <http://example.com/Allgemein%3B+Fachliche+Metadaten> .
+
+<http://example.com/%C3%9Cberschrift> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.15";
+  skos:prefLabel "Überschrift";
+  skos:related <http://example.com/Allgemein%3B+Fachliche+Metadaten> .
+
+<http://example.com/Datensatz+nicht+l%C3%B6schen> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.16";
+  skos:prefLabel "Datensatz nicht löschen";
+  skos:related <http://example.com/Allgemein%3B+Kollaborative+Metadaten> .
+
+<http://example.com/Datensatz+nicht+%C3%A4ndern> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.17";
+  skos:prefLabel "Datensatz nicht ändern";
+  skos:related <http://example.com/Allgemein%3B+Kollaborative+Metadaten> .
+
+<http://example.com/Datensatz+l%C3%B6schen> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.18";
+  skos:prefLabel "Datensatz löschen";
+  skos:related <http://example.com/Allgemein%3B+Kollaborative+Metadaten> .
+
+<http://example.com/ID> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.19";
+  skos:prefLabel "ID";
+  skos:related <http://example.com/System%3B+Technische+Metadaten> .
+
+<http://example.com/Status> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.20";
+  skos:prefLabel "Status";
+  skos:related <http://example.com/System%3B+Kollaborative+Metadaten> .
+
+<http://example.com/Copyright> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.21";
+  skos:prefLabel "Copyright";
+  skos:related <http://example.com/Rechte> .
+
+<http://example.com/Urheber> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.22";
+  skos:prefLabel "Urheber";
+  skos:related <http://example.com/Rechte> .
+
+<http://example.com/Anbieter> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.23";
+  skos:prefLabel "Anbieter";
+  skos:related <http://example.com/Rechte> .
+
+<http://example.com/Beschreibung+Medientyp> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.24";
+  skos:prefLabel "Beschreibung Medientyp";
+  skos:related <http://example.com/Rechte> .
+
+<http://example.com/Model+Release> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.25";
+  skos:prefLabel "Model Release";
+  skos:related <http://example.com/Rechte> .
+
+<http://example.com/Property+Release> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.26";
+  skos:prefLabel "Property Release" .
+
+<http://example.com/Vertragsstatus> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.27";
+  skos:prefLabel "Vertragsstatus";
+  skos:related <http://example.com/Rechte> .
+
+<http://example.com/PDF+Aktionen> a skos:Concept;
+  skos:altLabel " ";
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.28";
+  skos:prefLabel "PDF Aktionen";
+  skos:related <http://example.com/Switch> .
+
+<http://example.com/Bild+Aktionen> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.29";
+  skos:prefLabel "Bild Aktionen";
+  skos:related <http://example.com/Switch> .
+
+<http://example.com/Begleitdaten> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.30";
+  skos:prefLabel "Begleitdaten";
+  skos:related <http://example.com/Switch%3B+Kollaborative+Metadaten> .
+
+<http://example.com/Letzte+Aktion> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.31";
+  skos:prefLabel "Letzte Aktion";
+  skos:related <http://example.com/Switch> .
+
+<http://example.com/Sonstiges+Aktionen> a skos:Concept;
+  skos:broader <http://example.com/Metadatenfeld>;
+  skos:notation "7.5.11.32";
+  skos:prefLabel "Sonstiges Aktionen";
+  skos:related <http://example.com/Switch> .
+
+<http://example.com/Software> a skos:Concept;
+  skos:definition "Ist ein Oberbegriff zur Beschreibung aller Softwarebestandteile des Elvis-Systems bzw. aller mit dem System in Verbindung stehender Softwareprodukte."@DE;
+  skos:notation "8";
+  skos:prefLabel "Software" .
+
+<http://example.com/Picturemaxx> a skos:Concept;
+  skos:broader <http://example.com/Software>;
+  skos:definition "Ist ein Bildportal zur Suche von Standardassets (= Portfolio-Assets)"@DE;
+  skos:notation "8.1";
+  skos:prefLabel "Picturemaxx" .
+
+<http://example.com/Adobe+Air> a skos:Concept;
+  skos:altLabel "Adobe";
+  skos:broader <http://example.com/Software>;
+  skos:definition "AIR ist eine von Adobe Inc. entwickelte, plattformunabhängige Laufzeitumgebung, die es ermöglicht, Webanwendungen wie lokal installierte Anwendungssoftware zu benutzen und damit die Vorteile von beidem zu einer Rich Internet Application zu verbinden."@DE;
+  skos:notation "8.2";
+  skos:prefLabel "Adobe Air" .
+
+<http://example.com/Elvis-Versionen> a skos:Concept;
+  skos:broader <http://example.com/Software>;
+  skos:definition "Beschreibt die Edition des Elvisprogramms"@DE;
+  skos:notation "8.3";
+  skos:prefLabel "Elvis-Versionen" .
+
+<http://example.com/Elvis+4> a skos:Concept;
+  skos:broader <http://example.com/Elvis-Versionen>;
+  skos:definition "4. Edition der Elvis Programmreihe"@DE;
+  skos:notation "8.3.1";
+  skos:prefLabel "Elvis 4" .
+
+<http://example.com/Elvis+6> a skos:Concept;
+  skos:broader <http://example.com/Elvis-Versionen>;
+  skos:definition "6. Edition der Elvis Programmreihe"@DE;
+  skos:notation "8.3.2";
+  skos:prefLabel "Elvis 6" .
+
+<http://example.com/Elvis-Client> a skos:Concept;
+  skos:broader <http://example.com/Software>;
+  skos:definition "Ist ein InDesign-PlugIn zur Verknüpfung von InDesign-Dateien mit Woodwing Elvis. "@DE;
+  skos:notation "8.4";
+  skos:prefLabel "Elvis-Client" .
+
+<http://example.com/Standardsoftware> a skos:Concept;
+  skos:broader <http://example.com/Software>;
+  skos:definition "Standardsoftware deckt einen klar definierten Anwendungsbereich im Elvis ab und kann als vorgefertigte Produkte erworben werden"@DE;
+  skos:notation "8.5";
+  skos:prefLabel "Standardsoftware" .
+
+<http://example.com/Buchf%C3%BChrungssystem> a skos:Concept;
+  skos:altLabel "Rechnungswesen-Systeme";
+  skos:broader <http://example.com/Software>;
+  skos:definition "Ein Buchungssystem ist eine Computeranwendung, mit der Ressourcen zeitlich begrenzt und konfliktfrei reserviert werden können ."@DE;
+  skos:notation "8.6";
+  skos:prefLabel "Buchführungssystem" .
+
+<http://example.com/Standardanwendung> a skos:Concept;
+  skos:broader <http://example.com/Software>;
+  skos:definition "Standardanwendung wird im Elvis im bestimmten Bereich eingestellt"@DE;
+  skos:notation "8.7";
+  skos:prefLabel "Standardanwendung" .
+
+<http://example.com/Software-Komponente> a skos:Concept;
+  skos:broader <http://example.com/Software>;
+  skos:definition "Ist ein Bestandteil einer Software."@DE;
+  skos:notation "8.8";
+  skos:prefLabel "Software-Komponente" .
+
+<http://example.com/Plug-In> a skos:Concept;
+  skos:altLabel "PlugIns";
+  skos:broader <http://example.com/Software-Komponente>;
+  skos:definition "Ist eine Software-Komponente, um den vollen Funktionsumfang von Elvis 6 zu nutzen."@DE;
+  skos:notation "8.9.1";
+  skos:prefLabel "Plug-In" .
+
+<http://example.com/Elvis+Agent> a skos:Concept;
+  skos:broader <http://example.com/Plug-In>;
+  skos:notation "8.9.1.1";
+  skos:prefLabel "Elvis Agent" .
+
+<http://example.com/Elvis+InDesign+Client> a skos:Concept;
+  skos:broader <http://example.com/Plug-In>;
+  skos:notation "8.9.1.2";
+  skos:prefLabel "Elvis InDesign Client" .
+
+<http://example.com/Funktion> a skos:Concept;
+  skos:altLabel "Funktionsumfang";
+  skos:definition "Ist ein Oberbegriff zur Beschreibung aller technischen Funktionalitäten des Elvis-Systems."@DE;
+  skos:notation "9";
+  skos:prefLabel "Funktion" .
+
+<http://example.com/Asset-Funktion> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Ist eine Gruppe von Funktionen, die auf Assets angewendet werden kann bzw. im Zusammenhang mit Assets ausgeführt werden kann."@DE;
+  skos:notation "9.1";
+  skos:prefLabel "Asset-Funktion";
+  skos:related <http://example.com/Asset> .
+
+<http://example.com/Drag+%26+Drop> a skos:Concept;
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine spezielle Asset-Funktion, die es ermöglicht Assets per Drag & Drop zu verschieben."@DE;
+  skos:notation "9.1.1";
+  skos:prefLabel "Drag & Drop" .
+
+<http://example.com/Asset+importieren> a skos:Concept;
+  skos:altLabel "Dateien hochladen", "Daten hochladen", "Daten importieren", "Daten in Elvis importieren",
+    "Import einzelner Assets", "Import von Daten", "Importprozess", "Importvorgang";
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine spezielle Asset-Funktion, die es ermöglicht Assets ins Elvis-System zu importieren bzw. hochzuladen."@DE;
+  skos:notation "9.1.2";
+  skos:prefLabel "Asset importieren" .
+
+<http://example.com/ISO-Datei+importieren> a skos:Concept;
+  skos:altLabel "Abbilder von Datenträgern importieren";
+  skos:broader <http://example.com/Asset+importieren>;
+  skos:notation "9.1.2.1";
+  skos:prefLabel "ISO-Datei importieren" .
+
+<http://example.com/Cover+importieren> a skos:Concept;
+  skos:altLabel "Cover hochladen", "Vorläufige Umschalgsseiten hochladen";
+  skos:broader <http://example.com/Asset+importieren>;
+  skos:notation "9.1.2.2";
+  skos:prefLabel "Cover importieren" .
+
+<http://example.com/Layout-Dokument+importieren> a skos:Concept;
+  skos:altLabel "InDesign-Datei hochladen";
+  skos:broader <http://example.com/Asset+importieren>;
+  skos:notation "9.1.2.3";
+  skos:prefLabel "Layout-Dokument importieren" .
+
+<http://example.com/Audio-Datei+importieren> a skos:Concept;
+  skos:altLabel "Audio-Assets hochladen", "Vertonte Vokabeln hochladen", "Vertonte Vokabeln importieren";
+  skos:broader <http://example.com/Asset+importieren>;
+  skos:notation "9.1.2.4";
+  skos:prefLabel "Audio-Datei importieren" .
+
+<http://example.com/Import+von+Ordnern+mit+Assets> a skos:Concept;
+  skos:altLabel "Ordner inklusive Dateien importieren", "Ordner mit Assets hochladen",
+    "Ordner mit Daten hochladen";
+  skos:broader <http://example.com/Asset+importieren>;
+  skos:notation "9.1.2.5";
+  skos:prefLabel "Import von Ordnern mit Assets" .
+
+<http://example.com/Asset-Import+%C3%BCber+Internetseite> a skos:Concept;
+  skos:altLabel "Assets über Internetseite hochladen", "Daten über eine Internetseite hochladen";
+  skos:broader <http://example.com/Asset+importieren>;
+  skos:notation "9.1.2.6";
+  skos:prefLabel "Asset-Import über Internetseite" .
+
+<http://example.com/Asset+einchecken> a skos:Concept;
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Sie müssen Assets, die Sie verändern möchten, auschecken und nach der Veränderung wieder einchecken."@DE;
+  skos:notation "9.1.3";
+  skos:prefLabel "Asset einchecken" .
+
+<http://example.com/Asset+auschecken> a skos:Concept;
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Sie müssen Assets, die Sie verändern möchten, auschecken und nach der Veränderung wieder einchecken."@DE;
+  skos:notation "9.1.4";
+  skos:prefLabel "Asset auschecken" .
+
+<http://example.com/Auschecken+abbrechen> a skos:Concept;
+  skos:broader <http://example.com/Asset+auschecken>;
+  skos:notation "9.1.4.1";
+  skos:prefLabel "Auschecken abbrechen" .
+
+<http://example.com/Asset+mit+Metadaten+anreichern> a skos:Concept;
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine Asset-Funktion, die es ermöglicht Assets mit Metadaten zu versehen."@DE;
+  skos:notation "9.1.5";
+  skos:prefLabel "Asset mit Metadaten anreichern" .
+
+<http://example.com/Asset+verschieben> a skos:Concept;
+  skos:altLabel "Inhalt verschieben";
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine Asset-Funktion, die es ermöglicht Assets im Elvis-System zu verrschieben."@DE;
+  skos:notation "9.1.6";
+  skos:prefLabel "Asset verschieben" .
+
+<http://example.com/Asset+l%C3%B6schen> a skos:Concept;
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine Asset-Funktion, die es ermöglicht Assets im Elvis-System zu löschen."@DE;
+  skos:notation "9.1.7";
+  skos:prefLabel "Asset löschen" .
+
+<http://example.com/Asset+speichern> a skos:Concept;
+  skos:altLabel "save", "sichern";
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine Asset-Funktion, die es ermöglicht Assets im Elvis-System zu speichern."@DE;
+  skos:notation "9.1.8";
+  skos:prefLabel "Asset speichern" .
+
+<http://example.com/Asset+ersetzen> a skos:Concept;
+  skos:altLabel "austauschen", "auswechseln", "wechseln";
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine Asset-Funktion, die es ermöglicht Assets im Elvis-System durch andere Assets zu ersetzen."@DE;
+  skos:notation "9.1.9";
+  skos:prefLabel "Asset ersetzen" .
+
+<http://example.com/Asset+wiederherstellen> a skos:Concept;
+  skos:altLabel "Retten", "rückgängig machen";
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine Asset-Funktion, die es ermöglicht Assets im Elvis-System wiederherzustellen."@DE;
+  skos:notation "9.1.10";
+  skos:prefLabel "Asset wiederherstellen" .
+
+<http://example.com/Asset+referenzieren> a skos:Concept;
+  skos:altLabel "Asset in Layout-Dokumenten enthalten", "Asset mit Layout-Dokumenten verknüfen",
+    "Asset wird von einem Layout-Dokument refernziert";
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine Funktion, die Assets miteinander in InDesign-Dokumenten verknüpft."@DE;
+  skos:notation "9.1.11";
+  skos:prefLabel "Asset referenzieren" .
+
+<http://example.com/Asset+verkn%C3%BCpfen> a skos:Concept;
+  skos:altLabel "Asset verlinken", "ein Asset zu Variation eines Assets machen";
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine Asset-Funktion, die es ermöglicht Assets mit Produktionen zu verknüpfen."@DE;
+  skos:notation "9.1.12";
+  skos:prefLabel "Asset verknüpfen" .
+
+<http://example.com/Medien+zuordnen> a skos:Concept;
+  skos:altLabel "\"Medien zuordnen\" in PU Buch";
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine Funktion, die es im PU Buch ermöglicht Medien zuzuordnen."@DE;
+  skos:notation "9.1.13";
+  skos:prefLabel "Medien zuordnen" .
+
+<http://example.com/Asset+sortieren> a skos:Concept;
+  skos:broader <http://example.com/Asset-Funktion>;
+  skos:definition "Ist eine Asset-Funktion, die es ermöglicht Assets im Elvis-System zu sortieren."@DE;
+  skos:notation "9.1.14";
+  skos:prefLabel "Asset sortieren";
+  skos:related <http://example.com/sortieren> .
+
+<http://example.com/Versions-Funktion> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Ist eine Gruppe von Funktionen, die auf Asset-Versionen angewendet werden kann bzw. im Zusammenhang mmit diesen ausgeführt werden kann."@DE;
+  skos:notation "9.2";
+  skos:prefLabel "Versions-Funktion" .
+
+<http://example.com/Version+f%C3%B6rdern> a skos:Concept;
+  skos:broader <http://example.com/Versions-Funktion>;
+  skos:definition "Ist eine Funktion, die die letzten 5 Versionen wieder hergestellt "@DE;
+  skos:notation "9.2.1";
+  skos:prefLabel "Version fördern" .
+
+<http://example.com/neue+Version+speichern> a skos:Concept;
+  skos:altLabel "neues Asset";
+  skos:broader <http://example.com/Versions-Funktion>;
+  skos:definition "Das speichern einer Asset-Version."@DE;
+  skos:notation "9.2.2";
+  skos:prefLabel "neue Version speichern" .
+
+<http://example.com/Version+l%C3%B6schen> a skos:Concept;
+  skos:broader <http://example.com/Versions-Funktion>;
+  skos:definition "Das entfernen einer Asset-Version."@DE;
+  skos:notation "9.2.3";
+  skos:prefLabel "Version löschen" .
+
+<http://example.com/Kopie+herunterladen> a skos:Concept;
+  skos:broader <http://example.com/Versions-Funktion>;
+  skos:definition "Eine Kopie des Assets wird heruntergeladen"@DE;
+  skos:notation "9.2.4";
+  skos:prefLabel "Kopie herunterladen" .
+
+<http://example.com/Vorschau+herunterladen> a skos:Concept;
+  skos:broader <http://example.com/Versions-Funktion>;
+  skos:definition "Eine Vorschau des Assets wird heruntergeladen"@DE;
+  skos:notation "9.2.5";
+  skos:prefLabel "Vorschau herunterladen" .
+
+<http://example.com/Version+wiederherstellen> a skos:Concept;
+  skos:altLabel "frühere Version eines Assets wiederherstellen";
+  skos:broader <http://example.com/Versions-Funktion>;
+  skos:definition "Veränderungen eines Assets werden wieder rückgaängig gemacht, vor dem Zeitpunkt der Änderung."@DE;
+  skos:notation "9.2.6";
+  skos:prefLabel "Version wiederherstellen" .
+
+<http://example.com/Kollektion-Funktion> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Ist eine Gruppe von Funktionen, die auf Kollektionen angewendet werden kann bzw. im Zusammenhang mit diesen ausgeführt werden kann."@DE;
+  skos:notation "9.3";
+  skos:prefLabel "Kollektion-Funktion";
+  skos:related <http://example.com/Kollektion> .
+
+<http://example.com/Kollektionen+anlegen> a skos:Concept;
+  skos:broader <http://example.com/Kollektion-Funktion>;
+  skos:definition "Erstellen einer neuen Kollektion."@DE;
+  skos:notation "9.3.1";
+  skos:prefLabel "Kollektionen anlegen" .
+
+<http://example.com/Assets+zu+Kollektionen+hinzuf%C3%BCgen> a skos:Concept;
+  skos:broader <http://example.com/Kollektion-Funktion>;
+  skos:definition "Es können auch Assets in einer Kollektion hinzufügt werden, indem das Asser markiert wird und im Kontextmenü das \"Zu Kollektion hinzufügen\" auswählen.  Alternativ nutzen Sie das Kollektionen-Panel und dann wähle die Kollektion aus, indenen das Asset hinzufügt werden soll."@DE;
+  skos:notation "9.3.2";
+  skos:prefLabel "Assets zu Kollektionen hinzufügen" .
+
+<http://example.com/Assets+aus+Kollektionen+entfernen> a skos:Concept;
+  skos:broader <http://example.com/Kollektion-Funktion>;
+  skos:definition """Wenn bestimmte Assets nicht mehr benötigt werden in der Kollektion, (z. B. weil Sie sich gegen die Benutzung im Titel entschieden haben), können diese wieder entfernen. So halten Sie Ihre Kollektionen übersichtlich.
+"""@DE;
+  skos:notation "9.3.3";
+  skos:prefLabel "Assets aus Kollektionen entfernen" .
+
+<http://example.com/neue+Kollektionen+erzeugen> a skos:Concept;
+  skos:broader <http://example.com/Kollektion-Funktion>;
+  skos:definition "Das Anlegen einer neuen Kollektion."@DE;
+  skos:notation "9.3.4";
+  skos:prefLabel "neue Kollektionen erzeugen" .
+
+<http://example.com/Inhalt+aus+Kollektion+kopieren> a skos:Concept;
+  skos:broader <http://example.com/Kollektion-Funktion>;
+  skos:definition "Die Inhaltte einer Kollektion werden in eine anderen Kolletion übernommen"@DE;
+  skos:notation "9.3.5";
+  skos:prefLabel "Inhalt aus Kollektion kopieren" .
+
+<http://example.com/Kollektionen+verschieben> a skos:Concept;
+  skos:broader <http://example.com/Kollektion-Funktion>;
+  skos:definition "Die Inhaltte einer Kollektion werden in einem andern Verzeichnis vollständig hinterlegt"@DE;
+  skos:notation "9.3.6";
+  skos:prefLabel "Kollektionen verschieben" .
+
+<http://example.com/Kollektionen+l%C3%B6schen> a skos:Concept;
+  skos:broader <http://example.com/Kollektion-Funktion>;
+  skos:definition "Eine Kollektion wird entfernt aus dem System"@DE;
+  skos:notation "9.3.7";
+  skos:prefLabel "Kollektionen löschen" .
+
+<http://example.com/Kollektion+deaktivierten> a skos:Concept;
+  skos:altLabel "ausschalten", "deaktivieren", "shut down";
+  skos:broader <http://example.com/Kollektion-Funktion>;
+  skos:definition "Eine Kollektion wird deaktiviert, so das Sie nicht mehr sichtbar wird im System."@DE;
+  skos:notation "9.3.8";
+  skos:prefLabel "Kollektion deaktivierten" .
+
+<http://example.com/Kollektion+aktivieren> a skos:Concept;
+  skos:altLabel "aktivieren", "einschalten", "starten";
+  skos:broader <http://example.com/Kollektion-Funktion>;
+  skos:definition "Eine Kollektion die zuvor durch das deaktivieren nicht sichtbar war, wird wieder sichtbar für die anderen Systemnutzer."@DE;
+  skos:notation "9.3.9";
+  skos:prefLabel "Kollektion aktivieren" .
+
+<http://example.com/Asset-Verkn%C3%BCpfung> a skos:Concept;
+  skos:altLabel "verknüpfte Assets";
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Hierbei handelt es sich umd die Verknüpfung von zwei Assets mit einem Link."@DE;
+  skos:notation "9.4";
+  skos:prefLabel "Asset-Verknüpfung" .
+
+<http://example.com/Asset-Verlinkung> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Hierbei handelt es sich um das Verbinden der Assets, die technisch nichts miteinander zu tun haben, indem Sie sie verknüpfen (verlinken)."@DE;
+  skos:notation "9.5";
+  skos:prefLabel "Asset-Verlinkung" .
+
+<http://example.com/Asset-Referenzierung> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Referenzierungen können nur für InDesign-Dokumente angezeigt werden. Leider werden bei Alt-Daten nicht immer alle verwendeten Assets angezeigt. Verwenden Sie deshalb zur Kontrolle von Asset-Verwendungen in Layout-Dokumenten die lokale Bildlinkvalidierung in InDesign (vgl. „Satz-Richtlinien für Vorstufendienstleister\")."@DE;
+  skos:notation "9.6";
+  skos:prefLabel "Asset-Referenzierung" .
+
+<http://example.com/Metadaten-Funktion> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Ist eine Gruppe von Funktionen, die in Bezug auf Asset-Metadaten angewendet werden kann bzw. im Zusammenhang mit diesen ausgeführt werden kann."@DE;
+  skos:notation "9.7";
+  skos:prefLabel "Metadaten-Funktion" .
+
+<http://example.com/Metadaten-Bearbeitung> a skos:Concept;
+  skos:altLabel "Metadaten bearbeiten";
+  skos:broader <http://example.com/Metadaten-Funktion>;
+  skos:definition """Um Metadaten bearbeiten zu können, erfolgt über das Metadaten-Panel von Elvis. Metadaten, die sie bearbeiten können, sind durch eine Umrandung gekennzeichnet. Metadatenfelder, die Sie nicht bearbeiten können, sind nicht umrandet.
+"""@DE;
+  skos:notation "9.7.1";
+  skos:prefLabel "Metadaten-Bearbeitung" .
+
+<http://example.com/Metadaten+eines+einzelnen+Assets+bearbeiten> a skos:Concept;
+  skos:broader <http://example.com/Metadaten-Bearbeitung>;
+  skos:notation "9.7.2.1";
+  skos:prefLabel "Metadaten eines einzelnen Assets bearbeiten" .
+
+<http://example.com/Metadaten+von+mehreren+Assets+bearbeiten> a skos:Concept;
+  skos:broader <http://example.com/Metadaten-Bearbeitung>;
+  skos:notation "9.7.2.2";
+  skos:prefLabel "Metadaten von mehreren Assets bearbeiten" .
+
+<http://example.com/Zuordnungen+von+Metadaten+zu+mehreren+Assets> a skos:Concept;
+  skos:broader <http://example.com/Metadaten-Bearbeitung>;
+  skos:notation "9.7.2.3";
+  skos:prefLabel "Zuordnungen von Metadaten zu mehreren Assets" .
+
+<http://example.com/Metadaten+beim+Import+von+Assets+bearbeiten> a skos:Concept;
+  skos:broader <http://example.com/Metadaten-Bearbeitung>;
+  skos:notation "9.7.2.4";
+  skos:prefLabel "Metadaten beim Import von Assets bearbeiten" .
+
+<http://example.com/Rechtliche+Metadaten+eines+Assets+bearbeiten> a skos:Concept;
+  skos:broader <http://example.com/Metadaten-Bearbeitung>;
+  skos:notation "9.7.2.5";
+  skos:prefLabel "Rechtliche Metadaten eines Assets bearbeiten" .
+
+<http://example.com/Suchen+von+Assets+%C3%BCber+Metadaten> a skos:Concept;
+  skos:altLabel "Wiederfinden von Assets über Metadaten";
+  skos:broader <http://example.com/Metadaten-Funktion>;
+  skos:definition "Ist eine Metadaten-Funktion mit der über Suchbegriffe (Tags) Assets gesucht werden kann."@DE;
+  skos:notation "9.7.2";
+  skos:prefLabel "Suchen von Assets über Metadaten" .
+
+<http://example.com/Rechtliche+Metadaten+exportieren> a skos:Concept;
+  skos:broader <http://example.com/Metadaten-Funktion>;
+  skos:definition "Es werden die rechtlichen Metadaten von Assets in Form einer Excel-Tabelle exportieren."@DE;
+  skos:notation "9.7.3";
+  skos:prefLabel "Rechtliche Metadaten exportieren" .
+
+<http://example.com/Assets+%C3%BCber+Metadaten+filtern> a skos:Concept;
+  skos:broader <http://example.com/Metadaten-Funktion>;
+  skos:definition "Ein Filterfunktion, die die Assetst nach nach den ausgewählten Kreterien der Metadaten Filtert."@DE;
+  skos:notation "9.7.4";
+  skos:prefLabel "Assets über Metadaten filtern" .
+
+<http://example.com/Filter-Funktion> a skos:Concept;
+  skos:altLabel "Filter";
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Ist eine Softwarefunktion, die durch Eingabedaten/Einstellungen nur eine bestimmte Teilmenge aus einem Spektrum Angezeigt wird."@DE;
+  skos:notation "9.8";
+  skos:prefLabel "Filter-Funktion" .
+
+<http://example.com/Filterbereich> a skos:Concept;
+  skos:altLabel "Filterspektrum";
+  skos:broader <http://example.com/Filter-Funktion>;
+  skos:definition "Der Bereich in denen die Filter variationen/Einstellungen enthalten sind"@DE;
+  skos:notation "9.8.1";
+  skos:prefLabel "Filterbereich" .
+
+<http://example.com/Filteroption> a skos:Concept;
+  skos:altLabel "Filtereinstellung", "Filterkonfiguration";
+  skos:broader <http://example.com/Filter-Funktion>;
+  skos:definition "Beinhaltet ein Auswahl an Einstellungen, nach was Sie gefiltert werden sollen"@DE;
+  skos:notation "9.8.2";
+  skos:prefLabel "Filteroption" .
+
+<http://example.com/Schnell-Filter> a skos:Concept;
+  skos:broader <http://example.com/Filter-Funktion>;
+  skos:definition "Beinhaltet bereits voreingestellte Filtervarianten, bspw. Tags, in denen nur Assets ausgegeben werden die im Metdadatenfeld Tags ein Inhalt haben."@DE;
+  skos:notation "9.8.3";
+  skos:prefLabel "Schnell-Filter" .
+
+<http://example.com/nach+Art+filtern> a skos:Concept;
+  skos:altLabel "Type";
+  skos:broader <http://example.com/Schnell-Filter>;
+  skos:notation "9.8.3.1";
+  skos:prefLabel "nach Art filtern" .
+
+<http://example.com/nach+Tags+filtern> a skos:Concept;
+  skos:altLabel "Kennzeichen", "Markieren", "Tag";
+  skos:broader <http://example.com/Schnell-Filter>;
+  skos:notation "9.8.3.2";
+  skos:prefLabel "nach Tags filtern" .
+
+<http://example.com/nach+Status+filtern> a skos:Concept;
+  skos:broader <http://example.com/Schnell-Filter>;
+  skos:notation "9.8.3.3";
+  skos:prefLabel "nach Status filtern" .
+
+<http://example.com/Suchfunktion> a skos:Concept;
+  skos:altLabel "Suche", "Suchfunktion in Elvis";
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Ist eine mächtige Funktion, die es erlaubt einen bestimmte Daten/Verzeichnisse ect. in einem System (schnell) zu finden."@DE;
+  skos:notation "9.9";
+  skos:prefLabel "Suchfunktion" .
+
+<http://example.com/Bezugsanfragen> a skos:Concept;
+  skos:altLabel "Bezugsanfrage";
+  skos:broader <http://example.com/Suchfunktion>;
+  skos:definition "Mit dieser Suchfunktion können nach Daten gesucht werden, die sich auf andere Dateien im System beziehen z.B. einer Suche nach dem Original oder einer bestimmten Variation von einer Datei"@DE;
+  skos:notation "9.9.1";
+  skos:prefLabel "Bezugsanfragen" .
+
+<http://example.com/Unscharfe+Suche> a skos:Concept;
+  skos:altLabel "Fuzzy-Suche";
+  skos:broader <http://example.com/Suchfunktion>;
+  skos:definition "Ist die Suche mit dem Tilde-Zeichen ~."@DE;
+  skos:notation "9.9.2";
+  skos:prefLabel "Unscharfe Suche" .
+
+<http://example.com/einfache+Suche> a skos:Concept;
+  skos:altLabel "schnelle Suche";
+  skos:broader <http://example.com/Suchfunktion>;
+  skos:definition "Ist das Suchen nach einem Begriff, bspw. Blume."@DE;
+  skos:notation "9.9.3";
+  skos:prefLabel "einfache Suche" .
+
+<http://example.com/Volltextsuche> a skos:Concept;
+  skos:broader <http://example.com/Suchfunktion>;
+  skos:definition "Ist die Suche nach einzelnen Wörtern oder Wortkombinationen im Suchfeld."@DE;
+  skos:notation "9.9.4";
+  skos:prefLabel "Volltextsuche";
+  skos:related <http://example.com/Wildcard-Suchanfragen> .
+
+<http://example.com/Wildcard-Suchanfragen> a skos:Concept;
+  skos:broader <http://example.com/Suchfunktion>;
+  skos:definition """Eine Suche nach einer Zeichenketten, die auf die Zeichenkombination enden, davor ein beliebiges Zeichen haben oder dazwischen welche besitzen. Bsp. Suche Dateien, deren Metadatenfelder oder Textinhalte Wörtern mit vier Buchstaben mit einem beliebigen Buchstaben oder Zeichen an dritter Stelle (wie etwa „test\", „tent\", „text\" usw.) enthalten. Eingabe wäre hierfür te?t.
+"""@DE;
+  skos:notation "9.9.5";
+  skos:prefLabel "Wildcard-Suchanfragen" .
+
+<http://example.com/Suche+mit+Operatoren> a skos:Concept;
+  skos:altLabel "Operator";
+  skos:broader <http://example.com/Suchfunktion>;
+  skos:definition "Mit dieser Suchfunktion können komplexe Suchanfragen erstellt werden, durch Verknüpfungen von mehreren Suchbegriffen durch Operatoren wie z.B. AND, OR, NOT"@DE;
+  skos:notation "9.9.6";
+  skos:prefLabel "Suche mit Operatoren" .
+
+<http://example.com/Schnellzugriff> a skos:Concept;
+  skos:altLabel "Shortcut", "Verknüpfung";
+  skos:broader <http://example.com/Suchfunktion>;
+  skos:definition "Ist ein verfahren auf zuletzt verwendete Daten zuzugreifen, jedoch ist dies nicht mehr Verfügbar und  muss über den Krümelpfad zu seinem User-Verzeichnis navigieren. "@DE;
+  skos:notation "9.9.7";
+  skos:prefLabel "Schnellzugriff" .
+
+<http://example.com/Datenmuster-Suche> a skos:Concept;
+  skos:broader <http://example.com/Suchfunktion>;
+  skos:definition "Mit dieser Funktion können Suchanfragen zu Datums- und Zeitanfragen nach verschiedenen Mustern erstellt werden."@DE;
+  skos:notation "9.9.8";
+  skos:prefLabel "Datenmuster-Suche" .
+
+<http://example.com/Ansicht-Funktion> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Vorschaufunktion gegenüber Assets bzw. von Ordneransicht"@DE;
+  skos:notation "9.10";
+  skos:prefLabel "Ansicht-Funktion" .
+
+<http://example.com/Gro%C3%9Fansicht> a skos:Concept;
+  skos:altLabel "Overview", "Vollbild";
+  skos:broader <http://example.com/Ansicht-Funktion>;
+  skos:definition "Eine Funktion, die das Asset  bspw. auf Vollbildmodus vergrößert."@DE;
+  skos:notation "9.10.1";
+  skos:prefLabel "Großansicht" .
+
+<http://example.com/Filmstreifenansicht> a skos:Concept;
+  skos:altLabel "Filestreifenansichten";
+  skos:broader <http://example.com/Ansicht-Funktion>;
+  skos:definition "Das zu Anzeigene Asset wird dargestellt und weitere Assets als Diashow unterhalb des Assets dargestellt."@DE;
+  skos:notation "9.10.2";
+  skos:prefLabel "Filmstreifenansicht" .
+
+<http://example.com/Asset-Informationen> a skos:Concept;
+  skos:altLabel "Asset-Benachrichtigungen", "Asset-Information";
+  skos:broader <http://example.com/Ansicht-Funktion>;
+  skos:definition "Beinhaltet die Grundlegenden Informationen des Assetes wie bspw. Format."@DE;
+  skos:notation "9.10.3";
+  skos:prefLabel "Asset-Informationen" .
+
+<http://example.com/Anmelden-Funktion> a skos:Concept;
+  skos:altLabel "Anmeldung", "Einloggen";
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Sind Benutzer die sich ins das System einloggen."@DE;
+  skos:notation "9.11";
+  skos:prefLabel "Anmelden-Funktion" .
+
+<http://example.com/Abmelden-Funktion> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Sind Benutzer die sich aus dem System ausloggen."@DE;
+  skos:notation "9.12";
+  skos:prefLabel "Abmelden-Funktion" .
+
+<http://example.com/Normales-einchecken> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Ein ausgechecktes und außerhalb von Elvis verändertes Asset wird über den regulären Weg wieder in Elvis eingecheckt"@DE;
+  skos:notation "9.13";
+  skos:prefLabel "Normales-einchecken" .
+
+<http://example.com/Installation> a skos:Concept;
+  skos:altLabel "Installieren";
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Kopieren und Einrichten eines Programms auf einen Computer"@DE;
+  skos:notation "9.14";
+  skos:prefLabel "Installation" .
+
+<http://example.com/Daten+herunterladen> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Es werden Kopien der Daten auf ein Datenspeicher hinterlegt"@DE;
+  skos:notation "9.15";
+  skos:prefLabel "Daten herunterladen" .
+
+<http://example.com/Change-Checkouts-Folder> a skos:Concept;
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Ist eine Funktion, die zur Einstellung des Checkouts-Ordners dient."@DE;
+  skos:notation "9.16";
+  skos:prefLabel "Change-Checkouts-Folder";
+  skos:related <http://example.com/Checkouts-Folder> .
+
+<http://example.com/Open-Checkouts-Folder> a skos:Concept;
+  skos:altLabel "Open-Checkout-Ordner";
+  skos:broader <http://example.com/Funktion>;
+  skos:definition "Ist eine Funktion die zum Öffnen des lokalen Checkout-Ordners dient."@DE;
+  skos:notation "9.17";
+  skos:prefLabel "Open-Checkouts-Folder";
+  skos:related <http://example.com/Checkouts-Folder> .
+
+<http://example.com/Benutzerverwaltung> a skos:Concept;
+  skos:definition "Administratoren die gewisse Benutzer Verwaltungsrechte zuweisen."@DE;
+  skos:notation "10";
+  skos:prefLabel "Benutzerverwaltung" .
+
+<http://example.com/Cornelsen+Active+Directory> a skos:Concept;
+  skos:broader <http://example.com/Benutzerverwaltung>;
+  skos:definition "Ein zentralen Service des Cornelsen Verlags"@DE;
+  skos:notation "10.1";
+  skos:prefLabel "Cornelsen Active Directory" .
+
+<http://example.com/Breadcrump> a skos:Concept;
+  skos:definition "Eine Textzeile, die dem Benutzer anzeigt, in welcher Verzweigung er sich innerhalb einer Applikation befindet."@DE;
+  skos:notation "11";
+  skos:prefLabel "Breadcrump" .
+
+<http://example.com/Pfad> a skos:Concept;
+  skos:altLabel "Ordnerverzeichnis", "Path";
+  skos:broader <http://example.com/Breadcrump>;
+  skos:definition "Dient zur Positionsbestimmung eines Ordner/Datei"@DE;
+  skos:notation "11.1";
+  skos:prefLabel "Pfad" .
+
+<http://example.com/ISBN-Kr%C3%BCmelpfad> a skos:Concept;
+  skos:altLabel "Krümelpfad", "Ordnerpfad";
+  skos:broader <http://example.com/Pfad>;
+  skos:definition "Ist eine Ordnerstruktur."@DE;
+  skos:notation "11.1.1";
+  skos:prefLabel "ISBN-Krümelpfad";
+  skos:related <http://example.com/Ordnerstruktur> .
+
+<http://example.com/Richtlinie> a skos:Concept;
+  skos:altLabel "Direktiven", "Policies";
+  skos:definition "Ausführungsvorschrift einer Instanz"@DE;
+  skos:notation "12";
+  skos:prefLabel "Richtlinie" .
+
+<http://example.com/Konvention> a skos:Concept;
+  skos:altLabel "Agrement", "Regeln", "Vertrag";
+  skos:broader <http://example.com/Richtlinie>;
+  skos:definition "Regel zur Ablegung und Benneung von Daten"@DE;
+  skos:notation "12.1";
+  skos:prefLabel "Konvention" .
+
+<http://example.com/Ablagekonvention> a skos:Concept;
+  skos:altLabel "Ablagekonvention";
+  skos:broader <http://example.com/Richtlinie>;
+  skos:definition "Regel zur Ablegung von Daten"@DE;
+  skos:notation "12.2";
+  skos:prefLabel "Ablagekonvention" .
+
+<http://example.com/Nutzerberechtigung> a skos:Concept;
+  skos:altLabel "Nutzerrechte";
+  skos:broader <http://example.com/Richtlinie>;
+  skos:definition "Nutzer von Elvis müssen über einen Cornelsen-Active-Directory-Account verfügen, um dass berechtigt zu werden das System zu nutzen."@DE;
+  skos:notation "12.3";
+  skos:prefLabel "Nutzerberechtigung" .
