@@ -94,14 +94,13 @@ Auf Basis eines Impulsvortrages durch einen Terminologie-Experten, wurde die zus
 
 ## 3) Schwierigkeiten
 #### a) Modellierungsoptionen
-Da die Studierenden von Anfang an keinen Zugriff auf das System hatten, konnte die Wichtigkeit der
+Da die Studierenden keinen Zugriff auf das System hatten, konnte die Wichtigkeit der
 einzelnen Begriffe aus dem Handbuch nicht genau eingeschätzt werden.
 Deshalb haben die Gruppenmitglieder zuerst viele Begriffe als Konzept nach ihrem Verständnis
 modelliert.
 Weiterhin wurden am Anfang viele Begriffe mehrmals aufgeschrieben und einige Aspekte konnten
 nicht klar differenziert werden, denn das Handbuch wurde jeweils für zwei Gruppen in diverse Teile
 aufgeteilt.
-Dies wird weiterhin Schwierigkeiten bei der Modellierung der Ontologie verursachen.
 ######
 Vor dem ersten Feedback-Meeting mit den Cornelsen-Expertinnen war die Bedeutung von
 “Synonymen” in Zusammenhang mit Elvis nicht ganz klar, d.h. einige Begriffe konnten auf
@@ -208,21 +207,21 @@ Zudem wurde ein Großteil der Qualitätssicherung durch das wiederholte, iterati
 Besprechen der einzelnen Konzepte, sowohl während der Arbeit an der gruppeneigenen Tabelle als
 auch nach der Zusammenführung der beiden Gruppentabellen, erreicht.
 
-## 6) Erstellung SKOS-Modell (RDF-Format) und Webapp
+## 6) SKOS-Modell (RDF-Format) und Webapp
 Mit Hilfe von OpenRefine (siehe https://openrefine.org/) wurde anschließend unter Anwendung von SKOS (Simple Knowledge 
-Organisation System) die zusammengeführte Excel-Tabelle der Elvis-Taxonomie (siehe Anhang 4) in das RDF-Format überführt. 
+Organisation System) die zusammengeführte Excel-Tabelle der Taxonomie (siehe Anhang 4) in das RDF-Format überführt. 
 Die dabei erzeugte Turtle-Datei (siehe Anhang 5) sollte dann die Daten-Grundlage für die Weiterverarbeitung bilden. 
 ######
 Um schließlich auf die Daten mittels SPARQL-Abfragen zugreifen zu können wurde der Apache Jena Fuseki-Server 
 (siehe https://jena.apache.org/documentation/fuseki2/) als SPARQL-Endpoint genutzt. Zu Testzwecken wurde dieser 
-anfänglich von den Studenten lokal betrieben und anschließend ins Web überführt und mit Hilfe der Cloud Application 
+anfänglich von den Studierenden lokal betrieben und anschließend ins Web überführt und mit Hilfe der Cloud Application 
 Platform Heroku (siehe https://www.heroku.com/) öffentlich als Endpoint bereitgestellt.
 ######
 Die Entwicklung der Webapp (siehe Anhang 7, Link zur WebApp) erfolgte dann auf Basis des JavaScript Frameworks Vue.js 
 (siehe https://vuejs.org/), welches für die Erstellung von Single-Page-Webanwendungen geeignet ist. Als Dienst zum Konsumieren von REST APIs
 wurde dabei Axios (siehe https://axios.nuxtjs.org/) genutzt und so mittel HTTP-Requests (GET-Requests) der SPARQL-Endpoint-Server abgefragt.
 Um die Webbapp schließlich auch vom Design her ansprechend zu gestalten wurde abschließend als CSS das Framework mini.css (siehe https://minicss.org/) implementiert, 
-welches die Webbapp nun optisch ansprechend, modern und zusätzlich im responsive Design (für die mobile Nutzung) darstellt.   
+welches die Webbapp optisch ansprechend, modern und zugleich im responsive Design (für die mobile Nutzung) darstellt.   
  
 
 ## 7) Präsentation der Ergebnisse
